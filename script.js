@@ -45,7 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Animate elements on scroll
   const animateOnScroll = () => {
-    const elements = document.querySelectorAll(".about-card");
+    const elements = document.querySelectorAll(
+      ".about-card, .method-card, .application-card, .knowledge-article, .philosophy-section"
+    );
 
     elements.forEach((element) => {
       const elementTop = element.getBoundingClientRect().top;
@@ -59,7 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Initial setup for animation
-  const elements = document.querySelectorAll(".about-card");
+  const elements = document.querySelectorAll(
+    ".about-card, .method-card, .application-card, .knowledge-article, .philosophy-section"
+  );
   elements.forEach((element) => {
     element.style.opacity = "0";
     element.style.transform = "translateY(30px)";
