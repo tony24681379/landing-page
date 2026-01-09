@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="易經學習指南：從零基礎到精通的完整學習路徑，包含初級、中級、進階三個階段的詳細學習內容和方法。">
+    <meta name="keywords" content="易經學習, 學習指南, 初學者教程, 易經入門, 學習方法, 易經教學">
+    <meta name="author" content="易經卜卦">
+    <meta name="robots" content="index, follow">
+    <meta name="google-adsense-account" content="ca-pub-8905426307553442">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="易經學習指南 - 從入門到精通 | Changes.live">
+    <meta property="og:description" content="系統化的易經學習路徑，幫助你循序漸進地掌握易經智慧。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://changes.live/learning-guide.html">
+    <meta property="og:site_name" content="易經卜卦">
+
+    <title>易經學習指南 - 從入門到精通 | Changes.live</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "易經學習指南",
+        "description": "從零基礎到精通的完整易經學習路徑",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "初級階段",
+                "text": "建立易經基礎概念，認識八卦和陰陽五行"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "中級階段",
+                "text": "深入學習六十四卦，掌握卦辭和爻辭"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "進階階段",
+                "text": "研究易經哲學，整合應用於生活"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        .guide-intro {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .guide-intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .guide-intro p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        .learning-path {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .path-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .path-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #3498db, #9b59b6);
+        }
+
+        .stage {
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .stage-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        .stage-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
+            color: white;
+            border-radius: 25px;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .stage-title {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .stage-duration {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stage-objectives {
+            margin: 1.5rem 0;
+        }
+
+        .stage-objectives h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .objectives-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .objectives-list li {
+            padding: 0.8rem 0 0.8rem 2.5rem;
+            position: relative;
+            line-height: 1.6;
+            color: #34495e;
+        }
+
+        .objectives-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .study-topics {
+            background: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #27ae60;
+        }
+
+        .study-topics h4 {
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+
+        .study-topics ul {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .study-topics li {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .learning-tips {
+            background: #fff3cd;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #f39c12;
+        }
+
+        .learning-tips h4 {
+            color: #f39c12;
+            margin-bottom: 1rem;
+        }
+
+        .learning-tips p {
+            color: #2c3e50;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .methods-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .method-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+
+        .method-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .method-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .method-card h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .method-card p {
+            color: #34495e;
+            line-height: 1.7;
+        }
+
+        .pitfalls-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .pitfall-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #e74c3c;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        .pitfall-item h3 {
+            color: #e74c3c;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .pitfall-item p {
+            color: #34495e;
+            line-height: 1.7;
+            margin-bottom: 0.8rem;
+        }
+
+        .correction {
+            background: #e8f5e8;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .correction strong {
+            color: #27ae60;
+        }
+
+        .resources-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .resource-category {
+            margin-bottom: 2.5rem;
+        }
+
+        .resource-category h3 {
+            color: #2c3e50;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .resource-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .resource-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+
+        .resource-item h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-item p {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .guide-intro h1 {
+                font-size: 2rem;
+            }
+
+            .path-timeline::before {
+                left: 20px;
+            }
+
+            .stage-content {
+                padding: 1.5rem;
+            }
+
+            .stage-title {
+                font-size: 1.6rem;
+            }
+
+            .methods-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>易經卜卦</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hexagrams.html" class="nav-link">六十四卦</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="learning-guide.html" class="nav-link">學習指南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="case-studies.html" class="nav-link">實例分析</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link">常見問題</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro Section -->
+        <section class="guide-intro">
+            <div class="container">
+                <h1>易經學習指南</h1>
+                <p>循序漸進的學習路徑，從零基礎到精通易經智慧。無論你是完全的初學者，還是希望深化理解的進階學習者，這份指南都將為你提供清晰的方向。</p>
+            </div>
+        </section>
+
+        <!-- Learning Path Section -->
+        <section class="learning-path">
+            <div class="container">
+                <h2 class="section-title">學習路徑</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: #7f8c8d;">易經的學習是一個循序漸進的過程，我們將學習分為三個階段，每個階段都有明確的目標和學習重點。</p>
+
+                <div class="path-timeline">
+                    <!-- Stage 1: Beginner -->
+                    <div class="stage">
+                        <div class="stage-content">
+                            <span class="stage-badge">第一階段</span>
+                            <h2 class="stage-title">初級：建立基礎</h2>
+                            <p class="stage-duration">建議學習時間：1-2 個月</p>
+
+                            <div class="stage-objectives">
+                                <h4>學習目標</h4>
+                                <ul class="objectives-list">
+                                    <li>理解易經的基本概念和歷史背景</li>
+                                    <li>掌握陰陽、五行的基本原理</li>
+                                    <li>認識並記憶八卦的象徵意義</li>
+                                    <li>了解易經的基本結構（卦、爻）</li>
+                                    <li>學會簡單的占卜方法</li>
+                                </ul>
+                            </div>
+
+                            <div class="study-topics">
+                                <h4>必學內容</h4>
+                                <ul>
+                                    <li><strong>易經概論：</strong>易經的起源、發展歷史、版本流傳</li>
+                                    <li><strong>陰陽理論：</strong>陰陽的概念、特性、相互關係</li>
+                                    <li><strong>五行學說：</strong>金木水火土的特性、相生相剋</li>
+                                    <li><strong>八卦認識：</strong>乾坤震巽坎離艮兌的象徵、方位、屬性</li>
+                                    <li><strong>基本術語：</strong>卦象、爻位、卦辭、爻辭等概念</li>
+                                    <li><strong>占卜入門：</strong>銅錢占卜法或數字占卜法</li>
+                                </ul>
+                            </div>
+
+                            <div class="learning-tips">
+                                <h4>💡 學習建議</h4>
+                                <p>初學階段不要急於求成。先花時間理解基本概念，尤其是陰陽和八卦。可以製作八卦記憶卡片，隨身攜帶反覆記憶。每天花 20-30 分鐘閱讀基礎內容，比一次性長時間學習更有效。建議從一本入門書籍開始，不要同時閱讀多本，避免概念混淆。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 2: Intermediate -->
+                    <div class="stage">
+                        <div class="stage-content">
+                            <span class="stage-badge">第二階段</span>
+                            <h2 class="stage-title">中級：深入理解</h2>
+                            <p class="stage-duration">建議學習時間：3-6 個月</p>
+
+                            <div class="stage-objectives">
+                                <h4>學習目標</h4>
+                                <ul class="objectives-list">
+                                    <li>熟悉六十四卦的基本含義</li>
+                                    <li>理解卦辭和爻辭的解讀方法</li>
+                                    <li>掌握變爻和變卦的概念</li>
+                                    <li>學會分析卦象的基本方法</li>
+                                    <li>能夠進行較完整的占卜解讀</li>
+                                </ul>
+                            </div>
+
+                            <div class="study-topics">
+                                <h4>必學內容</h4>
+                                <ul>
+                                    <li><strong>六十四卦系統學習：</strong>逐一學習每個卦的結構、含義、應用</li>
+                                    <li><strong>卦辭深入理解：</strong>學習解讀卦辭的方法和技巧</li>
+                                    <li><strong>爻辭詳解：</strong>理解六爻的位置意義和爻辭內涵</li>
+                                    <li><strong>互卦與變卦：</strong>掌握卦象變化的規律</li>
+                                    <li><strong>十翼研讀：</strong>學習《易傳》中的重要篇章</li>
+                                    <li><strong>實占練習：</strong>開始為自己和他人進行占卜實踐</li>
+                                </ul>
+                            </div>
+
+                            <div class="learning-tips">
+                                <h4>💡 學習建議</h4>
+                                <p>這個階段的重點是「熟悉」而非「精通」。建議採用分組記憶法，將 64 卦分成幾組學習。可以先重點學習最常見的 12-20 個卦，如乾、坤、泰、否、屯、蒙等。每學習一個卦，都要做筆記記錄關鍵字和個人理解。開始嘗試占卜，但不要太在意準確性，重點是熟悉流程和培養感覺。每週至少進行 2-3 次實占練習，並記錄占卜結果與實際情況的對比。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 3: Advanced -->
+                    <div class="stage">
+                        <div class="stage-content">
+                            <span class="stage-badge">第三階段</span>
+                            <h2 class="stage-title">進階：整合應用</h2>
+                            <p class="stage-duration">建議學習時間：6 個月以上</p>
+
+                            <div class="stage-objectives">
+                                <h4>學習目標</h4>
+                                <ul class="objectives-list">
+                                    <li>深入理解易經哲學思想</li>
+                                    <li>能夠靈活解讀複雜的卦象</li>
+                                    <li>整合易經智慧指導實際生活</li>
+                                    <li>研究歷代易學名家的註解</li>
+                                    <li>形成自己的易學理解體系</li>
+                                </ul>
+                            </div>
+
+                            <div class="study-topics">
+                                <h4>必學內容</h4>
+                                <ul>
+                                    <li><strong>易經哲學：</strong>深入研究易經的哲學思想和宇宙觀</li>
+                                    <li><strong>象數理占：</strong>學習易學的四個層面及其關係</li>
+                                    <li><strong>歷代註解：</strong>研讀王弼、程頤、朱熹等名家註疏</li>
+                                    <li><strong>實際應用：</strong>將易經智慧應用於決策、管理、人際等</li>
+                                    <li><strong>進階占法：</strong>學習梅花易數、納甲筮法等高級占卜方法</li>
+                                    <li><strong>個人體系：</strong>整合各家所長，形成自己的理解</li>
+                                </ul>
+                            </div>
+
+                            <div class="learning-tips">
+                                <h4>💡 學習建議</h4>
+                                <p>進階階段的學習更加開放和個性化。重點是將易經從「知識」轉化為「智慧」。建議深入研讀原文，體會古人的思想。不要迷信任何一家之言，要批判性地學習和吸收。將易經的智慧應用到實際生活中，特別是在面臨重要決策時。保持學習記錄和心得筆記，定期回顧和總結。可以尋找志同道合的學習夥伴，互相交流討論。這個階段的學習是終身的，要保持謙遜和開放的心態。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Methods -->
+        <section class="methods-section">
+            <div class="container">
+                <h2 class="section-title">有效學習方法</h2>
+                <div class="methods-grid">
+                    <div class="method-card">
+                        <div class="method-icon">📚</div>
+                        <h3>系統閱讀</h3>
+                        <p>選擇一本好的入門書籍，從頭到尾系統地閱讀，而不是跳躍式學習。建議先讀通俗易懂的現代解讀本，再逐步接觸古文原典。每讀完一章，要做筆記總結重點。</p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">✍️</div>
+                        <h3>筆記記錄</h3>
+                        <p>準備專門的易經學習筆記本，記錄學習內容、個人理解、疑問和心得。可以用思維導圖整理八卦、六十四卦的關係。記錄每次占卜的過程和結果，事後驗證和反思。</p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">🎯</div>
+                        <h3>實踐應用</h3>
+                        <p>學習易經不能只停留在理論層面。要經常進行占卜實踐，為自己或朋友占卜，積累經驗。在生活中遇到問題時，思考易經的智慧如何應用。將易經原理用於分析時事和社會現象。</p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">💬</div>
+                        <h3>交流討論</h3>
+                        <p>加入易經學習社群或論壇，與其他學習者交流。參加線上或線下的易經讀書會、講座。不同的觀點和解讀能幫助你更全面地理解易經。但要注意批判性思考，不要盲目接受。</p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">🔄</div>
+                        <h3>重複溫習</h3>
+                        <p>易經內容龐雜，需要反覆溫習才能牢記。建議使用間隔重複的學習法，定期複習已學內容。每隔一段時間重讀重要章節，每次都會有新的體會和理解。</p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">🧘</div>
+                        <h3>靜心體悟</h3>
+                        <p>學習易經不僅是理智的學習，也是心靈的修煉。在占卜前要靜心，專注於所問的問題。閱讀卦辭爻辭時，要細細品味其中的哲理。有時候靈光一閃的頓悟比長時間思考更有價值。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Pitfalls -->
+        <section class="pitfalls-section">
+            <div class="container">
+                <h2 class="section-title">常見學習誤區</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; color: #7f8c8d;">了解並避免這些常見的學習誤區，可以讓你的易經學習之路更加順暢。</p>
+
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div class="pitfall-item">
+                        <h3>❌ 誤區一：急於求成</h3>
+                        <p>許多初學者希望快速掌握易經，短時間內就能精準占卜。但易經是一門深奧的學問，需要時間積累和實踐體會。</p>
+                        <div class="correction">
+                            <strong>正確做法：</strong> 保持耐心，循序漸進。接受學習是一個漸進的過程，每天進步一點點。不要期望立即就能完全理解所有內容。
+                        </div>
+                    </div>
+
+                    <div class="pitfall-item">
+                        <h3>❌ 誤區二：過度迷信</h3>
+                        <p>有些人學習易經後，事事都要占卜，將易經當作萬能的算命工具，過度依賴，失去了自主判斷能力。</p>
+                        <div class="correction">
+                            <strong>正確做法：</strong> 易經是智慧的參考，不是生活的主宰。占卜只是提供另一個思考角度，最終的決策還是要靠自己的理性判斷。重大事項可以占卜，但不要事事占卜。
+                        </div>
+                    </div>
+
+                    <div class="pitfall-item">
+                        <h3>❌ 誤區三：只學占卜，不學哲理</h3>
+                        <p>一些學習者只關注占卜技術，忽視易經的哲學內涵。這樣會導致占卜變成機械的查表，失去了易經的真正價值。</p>
+                        <div class="correction">
+                            <strong>正確做法：</strong> 易經的精髓在於其哲學思想和人生智慧。占卜只是應用的一種方式。要同時學習易經的哲理，理解陰陽變化、時中之道等思想，這樣才能真正活用易經。
+                        </div>
+                    </div>
+
+                    <div class="pitfall-item">
+                        <h3>❌ 誤區四：死記硬背</h3>
+                        <p>試圖死記硬背六十四卦的所有卦辭、爻辭，不理解其含義和邏輯，導致學習枯燥且效果差。</p>
+                        <div class="correction">
+                            <strong>正確做法：</strong> 理解比記憶更重要。先理解卦象的結構和邏輯，從卦象本身去推導含義。記住關鍵字和核心概念即可，不必逐字背誦。隨著理解深入，自然能記住重要內容。
+                        </div>
+                    </div>
+
+                    <div class="pitfall-item">
+                        <h3>❌ 誤區五：盲目相信一家之言</h3>
+                        <p>完全相信某一位老師或某一本書的解讀，不去思考和驗證，形成固化的理解模式。</p>
+                        <div class="correction">
+                            <strong>正確做法：</strong> 易經解讀歷來眾說紛紜，每家都有其見解。要廣泛閱讀不同的解讀，批判性地吸收。結合自己的實踐體驗，形成自己的理解。保持開放和謙虛的學習態度。
+                        </div>
+                    </div>
+
+                    <div class="pitfall-item">
+                        <h3>❌ 誤區六：忽視基礎，直接學高級內容</h3>
+                        <p>基礎還未打牢，就去學習梅花易數、奇門遁甲等高級內容，導致根基不穩，理解混亂。</p>
+                        <div class="correction">
+                            <strong>正確做法：</strong> 萬丈高樓平地起。一定要先打好基礎，扎實掌握陰陽、八卦、六十四卦的基本知識。只有基礎穩固，學習高級內容時才能融會貫通。不要跳躍學習。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources-section">
+            <div class="container">
+                <h2 class="section-title">推薦學習資源</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; color: #7f8c8d;">以下是各階段學習的推薦資源，幫助你更有效地學習易經。</p>
+
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div class="resource-category">
+                        <h3>📖 入門書籍</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4>《易經入門》- 傅佩榮</h4>
+                                <p>深入淺出，適合零基礎讀者。用現代語言解釋易經概念，配有大量實例。</p>
+                            </div>
+                            <div class="resource-item">
+                                <h4>《易經的智慧》- 曾仕強</h4>
+                                <p>從管理和人生智慧的角度解讀易經，通俗易懂，實用性強。</p>
+                            </div>
+                            <div class="resource-item">
+                                <h4>《圖解易經》系列</h4>
+                                <p>圖文並茂，視覺化呈現易經知識，適合視覺學習者。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3>📚 經典原典</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4>《周易正義》- 孔穎達</h4>
+                                <p>唐代官方欽定的易經註疏，是研究易經的重要參考。</p>
+                            </div>
+                            <div class="resource-item">
+                                <h4>《周易本義》- 朱熹</h4>
+                                <p>宋代理學家朱熹的註解，影響深遠，是理解易經的重要版本。</p>
+                            </div>
+                            <div class="resource-item">
+                                <h4>《易傳》（十翼）</h4>
+                                <p>傳為孔子所作的易經註解，是理解易經哲學思想的關鍵文獻。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3>🎓 進階研究</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4>《易經雜說》- 南懷瑾</h4>
+                                <p>融合儒釋道三家思想，深入淺出地講解易經哲理。</p>
+                            </div>
+                            <div class="resource-item">
+                                <h4>《梅花易數》- 邵雍</h4>
+                                <p>宋代易學大師邵雍創立的占卜體系，簡便靈活。</p>
+                            </div>
+                            <div class="resource-item">
+                                <h4>《易學哲學史》- 朱伯崑</h4>
+                                <p>系統梳理易學發展歷史，了解各朝代易學思想的演變。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3>🌐 線上資源</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4>易經線上卜卦工具</h4>
+                                <p>可以在本站進行線上占卜，記錄占卜歷史，方便學習和驗證。</p>
+                            </div>
+                            <div class="resource-item">
+                                <h4>易經學習社群</h4>
+                                <p>加入易經學習論壇或社群，與同好交流學習心得。</p>
+                            </div>
+                            <div class="resource-item">
+                                <h4>易經講座影片</h4>
+                                <p>觀看名師講座影片，聽取不同的解讀角度和見解。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>開始你的易經學習之旅</h2>
+                    <p>掌握系統的學習方法，循序漸進地深入易經世界。</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="hexagrams.html" class="btn btn-primary btn-large">學習六十四卦</a>
+                        <a href="case-studies.html" class="btn btn-secondary btn-large">查看實例分析</a>
+                        <a href="https://iching.changes.live" class="btn btn-secondary btn-large">開始實踐占卜</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>易經卜卦</h3>
+                    <p>傳統智慧與現代生活的完美結合</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="hexagrams.html">六十四卦</a></li>
+                        <li><a href="learning-guide.html">學習指南</a></li>
+                        <li><a href="case-studies.html">實例分析</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
+                        <li><a href="privacy.html">隱私政策</a></li>
+                        <li><a href="terms.html">使用條款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡資訊</h4>
+                    <p>網站：<a href="https://changes.live">changes.live</a></p>
+                    <p>卜卦服務：<a href="https://iching.changes.live">iching.changes.live</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 易經卜卦 Changes.live. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

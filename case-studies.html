@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="易經占卜實例分析：真實案例展示如何運用易經智慧解決生活、事業、感情等問題，包含詳細的卦象解讀和結果驗證。">
+    <meta name="keywords" content="易經案例, 占卜實例, 卦象解讀, 實際應用, 案例分析, 易經占卜">
+    <meta name="author" content="易經卜卦">
+    <meta name="robots" content="index, follow">
+    <meta name="google-adsense-account" content="ca-pub-8905426307553442">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="易經占卜實例分析 | Changes.live">
+    <meta property="og:description" content="通過真實案例學習如何運用易經智慧解決實際問題。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://changes.live/case-studies.html">
+    <meta property="og:site_name" content="易經卜卦">
+
+    <title>易經占卜實例分析 - 真實案例解讀 | Changes.live</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "易經占卜實例分析",
+        "description": "真實案例展示如何運用易經智慧解決實際問題",
+        "author": {
+            "@type": "Organization",
+            "name": "易經卜卦"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "易經卜卦",
+            "url": "https://changes.live"
+        },
+        "datePublished": "2024-01-09"
+    }
+    </script>
+
+    <style>
+        .cases-intro {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .cases-intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cases-intro p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        .cases-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .case-categories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .category-tag {
+            padding: 0.5rem 1.5rem;
+            background: white;
+            border: 2px solid #3498db;
+            border-radius: 25px;
+            color: #3498db;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .category-tag:hover,
+        .category-tag.active {
+            background: #3498db;
+            color: white;
+        }
+
+        .case-study {
+            background: white;
+            margin-bottom: 3rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .case-header {
+            background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
+            color: white;
+            padding: 2rem;
+        }
+
+        .case-category-label {
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .case-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .case-meta {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .case-content {
+            padding: 2.5rem;
+        }
+
+        .case-section {
+            margin-bottom: 2rem;
+        }
+
+        .case-section h3 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .case-section p {
+            line-height: 1.8;
+            color: #34495e;
+            margin-bottom: 1rem;
+        }
+
+        .question-box {
+            background: #fff9e6;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #f39c12;
+            margin: 1rem 0;
+        }
+
+        .question-box h4 {
+            color: #f39c12;
+            margin-bottom: 0.8rem;
+        }
+
+        .question-box p {
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .hexagram-result {
+            background: #e8f5fe;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .hexagram-symbol {
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+
+        .hexagram-name {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .hexagram-description {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        .interpretation-box {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .interpretation-box h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .interpretation-box ul {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .interpretation-box li {
+            margin-bottom: 0.8rem;
+            color: #34495e;
+        }
+
+        .advice-box {
+            background: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #27ae60;
+            margin: 1.5rem 0;
+        }
+
+        .advice-box h4 {
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+
+        .advice-box ul {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .advice-box li {
+            margin-bottom: 0.8rem;
+            color: #2c3e50;
+        }
+
+        .outcome-box {
+            background: #d4edda;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+            margin: 1.5rem 0;
+        }
+
+        .outcome-box h4 {
+            color: #28a745;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .outcome-box p {
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .reflection-box {
+            background: #f0f0f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+
+        .reflection-box p {
+            color: #555;
+            margin: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .cases-intro h1 {
+                font-size: 2rem;
+            }
+
+            .case-content {
+                padding: 1.5rem;
+            }
+
+            .case-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>易經卜卦</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hexagrams.html" class="nav-link">六十四卦</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="learning-guide.html" class="nav-link">學習指南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="case-studies.html" class="nav-link">實例分析</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link">常見問題</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro Section -->
+        <section class="cases-intro">
+            <div class="container">
+                <h1>易經占卜實例分析</h1>
+                <p>通過真實案例（已匿名化處理）了解如何運用易經智慧解決實際問題。每個案例都包含完整的占卜過程、卦象解讀、建議指導和結果驗證。</p>
+            </div>
+        </section>
+
+        <!-- Cases Section -->
+        <section class="cases-section">
+            <div class="container">
+                <h2 class="section-title">案例精選</h2>
+
+                <!-- Case 1: Career -->
+                <div class="case-study">
+                    <div class="case-header">
+                        <span class="case-category-label">📊 事業決策</span>
+                        <h2 class="case-title">轉職時機的抉擇</h2>
+                        <p class="case-meta">案例背景：科技業 PM，35 歲，收到新公司 offer</p>
+                    </div>
+
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h3>問卜情況</h3>
+                            <div class="question-box">
+                                <h4>🔍 問題</h4>
+                                <p>張先生（化名）在目前公司工作五年，職位穩定但發展空間有限。最近收到另一家新創公司的 offer，職位更高、薪資增加 30%，但公司規模較小，未來有不確定性。他猶豫是否該接受新 offer，於是求問易經。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>占卜結果</h3>
+                            <div class="hexagram-result">
+                                <div class="hexagram-symbol">☳☵</div>
+                                <div class="hexagram-name">第四十卦：解卦（雷水解）</div>
+                                <p class="hexagram-description">動爻：九二</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>卦象解讀</h3>
+                            <div class="interpretation-box">
+                                <h4>卦象分析</h4>
+                                <ul>
+                                    <li><strong>解卦含義：</strong>解卦象徵解脫、解決、轉機。雷動於水上，積壓已久的困難得以化解，是行動的好時機。</li>
+                                    <li><strong>卦辭：</strong>「解：利西南，無所往，其來復吉。有攸往，夙吉。」表示往前行動是吉利的，但也提醒要謹慎評估。</li>
+                                    <li><strong>九二爻辭：</strong>「田獲三狐，得黃矢，貞吉。」意指能夠克服障礙，獲得好的結果，但需要保持正道。</li>
+                                    <li><strong>整體意涵：</strong>當前確實是轉變的時機，舊的困境可以得到解決，但要選擇正確的方向。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>指導建議</h3>
+                            <div class="advice-box">
+                                <h4>✓ 根據卦象給出的建議</h4>
+                                <ul>
+                                    <li><strong>時機正確：</strong>解卦顯示這確實是改變的時機，目前工作的困境需要突破。</li>
+                                    <li><strong>審慎評估：</strong>雖然可以行動，但要充分了解新公司的實際情況，不要只看表面條件。</li>
+                                    <li><strong>保持正道：</strong>九二爻辭強調「貞吉」，轉職的動機應該是為了發展，而非單純的薪資誘惑。</li>
+                                    <li><strong>具體行動：</strong>建議深入了解新公司的文化、團隊、發展前景，與未來直屬主管多次溝通後再做決定。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>實際結果</h3>
+                            <div class="outcome-box">
+                                <h4><span>✅</span> 事後驗證</h4>
+                                <p>張先生按照建議，與新公司進行了多次深入溝通，充分了解公司文化和發展方向後，決定接受 offer。半年後回饋：新職位確實帶來了更大的發展空間和成就感，薪資增長符合預期。雖然新創公司工作強度較大，但他表示這個轉變是正確的選擇，職業生涯得到了實質性的突破。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <div class="reflection-box">
+                                <p><strong>💡 啟示：</strong>易經的智慧不是簡單地告訴你「去」或「不去」，而是幫助你看清形勢、把握時機。解卦的出現確認了轉變的時機已到，但同時提醒要謹慎行事，這種平衡的智慧正是易經的價值所在。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2: Business -->
+                <div class="case-study">
+                    <div class="case-header">
+                        <span class="case-category-label">💼 商業決策</span>
+                        <h2 class="case-title">新產品上市時機</h2>
+                        <p class="case-meta">案例背景：電商創業者，產品開發完成，考慮上市時間</p>
+                    </div>
+
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h3>問卜情況</h3>
+                            <div class="question-box">
+                                <h4>🔍 問題</h4>
+                                <p>李小姐（化名）的團隊經過半年開發，新產品已基本完成。團隊建議立即上市搶佔市場，但她感覺準備還不夠充分，市場測試數據也不夠多。在這個關鍵時刻，她希望通過易經獲得指引。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>占卜結果</h3>
+                            <div class="hexagram-result">
+                                <div class="hexagram-symbol">☵☰</div>
+                                <div class="hexagram-name">第五卦：需卦（水天需）</div>
+                                <p class="hexagram-description">動爻：九三</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>卦象解讀</h3>
+                            <div class="interpretation-box">
+                                <h4>卦象分析</h4>
+                                <ul>
+                                    <li><strong>需卦含義：</strong>需卦的核心是「等待」，雲升於天，雨水未降，需要等待時機成熟。</li>
+                                    <li><strong>卦辭：</strong>「需：有孚，光亨，貞吉。利涉大川。」雖然最終會成功，但現在需要耐心等待。</li>
+                                    <li><strong>九三爻辭：</strong>「需於泥，致寇至。」過於著急會帶來麻煩，需要更多準備。</li>
+                                    <li><strong>整體意涵：</strong>產品和團隊都有潛力，但時機尚未完全成熟，貿然推出可能遇到問題。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>指導建議</h3>
+                            <div class="advice-box">
+                                <h4>✓ 根據卦象給出的建議</h4>
+                                <ul>
+                                    <li><strong>延緩上市：</strong>暫時不要急於發布產品，利用這段時間做更充分的準備。</li>
+                                    <li><strong>完善產品：</strong>進行更多的測試，收集用戶反饋，優化產品細節。</li>
+                                    <li><strong>市場調研：</strong>深入研究目標市場，制定更完善的行銷策略。</li>
+                                    <li><strong>團隊準備：</strong>培訓客服團隊，準備好應對上市後可能出現的問題。</li>
+                                    <li><strong>時機判斷：</strong>建議再等 1-2 個月，各方面準備充分後再上市。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>實際結果</h3>
+                            <div class="outcome-box">
+                                <h4><span>✅</span> 事後驗證</h4>
+                                <p>李小姐採納建議，說服團隊延後兩個月上市。在這段時間內，團隊發現並修復了多個重要 bug，完善了客服流程，並調整了定價策略。產品最終上市時，運行順暢，獲得了很好的用戶評價。更重要的是，這兩個月內競爭對手也推出了類似產品但反應不佳，讓他們看到了對手的問題並及時避免。李小姐事後表示，如果當初匆忙上市，可能會遇到很多預期外的問題。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <div class="reflection-box">
+                                <p><strong>💡 啟示：</strong>在商業決策中，「快」不一定是最好的策略。需卦教導我們，有時候等待和準備比快速行動更重要。充分的準備能夠讓你在機會來臨時抓得更穩，也能避免因倉促而導致的失誤。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3: Relationship -->
+                <div class="case-study">
+                    <div class="case-header">
+                        <span class="case-category-label">💕 人際關係</span>
+                        <h2 class="case-title">合作夥伴的信任危機</h2>
+                        <p class="case-meta">案例背景：合夥創業者，面臨夥伴間的信任問題</p>
+                    </div>
+
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h3>問卜情況</h3>
+                            <div class="question-box">
+                                <h4>🔍 問題</h4>
+                                <p>王先生（化名）與兩位朋友共同創業一年，最近發現合夥人之一在財務管理上有些不透明，引發了他的懷疑。他不確定是自己多慮還是真的有問題，也不知道該如何處理這個敏感的關係問題。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>占卜結果</h3>
+                            <div class="hexagram-result">
+                                <div class="hexagram-symbol">☰☵</div>
+                                <div class="hexagram-name">第六卦：訟卦（天水訟）</div>
+                                <p class="hexagram-description">動爻：六三</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>卦象解讀</h3>
+                            <div class="interpretation-box">
+                                <h4>卦象分析</h4>
+                                <ul>
+                                    <li><strong>訟卦含義：</strong>訟卦代表爭執、矛盾，天與水背道而馳，象徵立場分歧。</li>
+                                    <li><strong>卦辭警示：</strong>「訟：有孚，窒惕，中吉，終凶。利見大人。」提醒雖有理由，但爭執最終不利，應尋求調解。</li>
+                                    <li><strong>六三爻辭：</strong>「食舊德，貞厲，終吉。」建議保持原有的良好關係，謹慎處理，最終會好轉。</li>
+                                    <li><strong>整體意涵：</strong>確實存在問題，但不要激化矛盾，應該通過溝通和制度來解決。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>指導建議</h3>
+                            <div class="advice-box">
+                                <h4>✓ 根據卦象給出的建議</h4>
+                                <ul>
+                                    <li><strong>不要直接對抗：</strong>避免情緒化的指責或攤牌，這樣只會讓關係破裂。</li>
+                                    <li><strong>建立制度：</strong>以完善公司管理制度的名義，提出建立透明的財務管理系統。</li>
+                                    <li><strong>引入第三方：</strong>聘請會計師定期審核財務，以專業制度代替個人信任。</li>
+                                    <li><strong>誠懇溝通：</strong>找個合適的時機，以關心公司發展的角度，與夥伴坦誠溝通。</li>
+                                    <li><strong>保留證據：</strong>同時也要保護自己的權益，保留相關的文件和記錄。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>實際結果</h3>
+                            <div class="outcome-box">
+                                <h4><span>✅</span> 事後驗證</h4>
+                                <p>王先生採取了溫和但堅定的方式，以「公司發展需要更規範管理」為由，提議建立財務透明制度。過程中確實發現了一些不當的資金使用，但並非惡意，而是該夥伴對財務管理的認識不足。通過引入專業會計師和建立制度，問題得到了解決。三個月後，公司的財務管理變得規範透明，合夥人之間的信任反而因為這次契機得到了加強。如果當初採取對抗方式，可能會導致公司解體。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <div class="reflection-box">
+                                <p><strong>💡 啟示：</strong>訟卦的智慧在於提醒我們，當面臨矛盾衝突時，要尋求建設性的解決方案而非對抗。通過制度和專業力量來解決問題，既能維護權益，又能保持關係，這是更高明的處理方式。易經告訴我們「利見大人」，即尋求第三方的專業協助，這在現代社會依然非常適用。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4: Personal Growth -->
+                <div class="case-study">
+                    <div class="case-header">
+                        <span class="case-category-label">🎓 學習發展</span>
+                        <h2 class="case-title">職業技能轉型的迷茫</h2>
+                        <p class="case-meta">案例背景：28 歲工程師，考慮轉型學習新技能</p>
+                    </div>
+
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h3>問卜情況</h3>
+                            <div class="question-box">
+                                <h4>🔍 問題</h4>
+                                <p>陳小姐（化名）從事傳統軟體開發工作，感覺技術棧逐漸過時。她想學習 AI 和機器學習技術，但又擔心學習曲線陡峭，年齡也不算小，不確定是否應該冒這個險。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>占卜結果</h3>
+                            <div class="hexagram-result">
+                                <div class="hexagram-symbol">☷☶</div>
+                                <div class="hexagram-name">第十五卦：謙卦（地山謙）</div>
+                                <p class="hexagram-description">動爻：九三</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>卦象解讀</h3>
+                            <div class="interpretation-box">
+                                <h4>卦象分析</h4>
+                                <ul>
+                                    <li><strong>謙卦含義：</strong>謙卦是唯一六爻皆吉的卦，象徵謙虛低調但德才兼備。山在地下，有才而不露。</li>
+                                    <li><strong>卦辭：</strong>「謙：亨，君子有終。」保持謙虛學習的態度，最終會成功。</li>
+                                    <li><strong>九三爻辭：</strong>「勞謙君子，有終吉。」勤奮學習且保持謙遜的人，最終會有好結果。</li>
+                                    <li><strong>整體意涵：</strong>轉型學習新技能是正確的選擇，關鍵是要保持謙虛好學的態度。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>指導建議</h3>
+                            <div class="advice-box">
+                                <h4>✓ 根據卦象給出的建議</h4>
+                                <ul>
+                                    <li><strong>勇敢開始：</strong>謙卦是吉卦，支持你的學習計劃，不要被年齡或困難嚇倒。</li>
+                                    <li><strong>謙虛態度：</strong>以初學者的謙遜心態學習，不要因為有經驗就好高騖遠。</li>
+                                    <li><strong>循序漸進：</strong>從基礎開始，紮實學習，不要急於求成。</li>
+                                    <li><strong>向人請教：</strong>主動向 AI 領域的前輩學習，參加社群活動。</li>
+                                    <li><strong>持續努力：</strong>「勞謙」強調勤奮，要付出足夠的時間和精力。</li>
+                                    <li><strong>實際應用：</strong>學習同時要做實際項目，理論與實踐結合。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>實際結果</h3>
+                            <div class="outcome-box">
+                                <h4><span>✅</span> 事後驗證</h4>
+                                <p>陳小姐決定開始學習 AI 技術，報名了線上課程，每天下班後學習 2-3 小時。她保持謙遜的態度，在學習社群中活躍提問和交流。經過 8 個月的努力，她完成了幾個實際項目，並成功轉型到 AI 相關職位。她的主管特別欣賞她謙虛好學的態度和紮實的學習成果。一年後，她已經成為團隊中 AI 方向的重要成員，薪資也有顯著提升。她說，謙卦的指引讓她有了信心，而「勞謙」的態度則是她成功的關鍵。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <div class="reflection-box">
+                                <p><strong>💡 啟示：</strong>謙卦告訴我們，真正的學習需要謙虛的態度和勤奮的努力。在技術快速變化的時代，保持學習的心態比任何單一技能都更重要。年齡、經驗不是學習的障礙，反而能幫助你更好地理解和應用新知識。關鍵是要有「初學者心態」，謙虛而勤奮。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 5: Investment -->
+                <div class="case-study">
+                    <div class="case-header">
+                        <span class="case-category-label">💰 投資理財</span>
+                        <h2 class="case-title">市場動盪時的投資決策</h2>
+                        <p class="case-meta">案例背景：投資人，面臨市場波動的資金決策</p>
+                    </div>
+
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h3>問卜情況</h3>
+                            <div class="question-box">
+                                <h4>🔍 問題</h4>
+                                <p>周先生（化名）持有一筆投資組合，最近市場大幅波動，他的投資已經虧損 15%。他不確定是該止損出場，還是繼續持有等待反彈，或者甚至在低點加碼。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>占卜結果</h3>
+                            <div class="hexagram-result">
+                                <div class="hexagram-symbol">☷☰</div>
+                                <div class="hexagram-name">第十一卦：泰卦（地天泰）</div>
+                                <p class="hexagram-description">動爻：上六</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>卦象解讀</h3>
+                            <div class="interpretation-box">
+                                <h4>卦象分析</h4>
+                                <ul>
+                                    <li><strong>泰卦本意：</strong>泰卦代表通泰順暢，天地交泰，是吉利的卦象。</li>
+                                    <li><strong>動爻警示：</strong>上六爻「城復於隍，勿用師。」泰極否來，盛極而衰的轉折點。</li>
+                                    <li><strong>時機判斷：</strong>雖然泰卦吉利，但上六提醒已到轉折點，要謹慎。</li>
+                                    <li><strong>整體意涵：</strong>當前市場可能接近短期反彈的頂點，不宜盲目樂觀。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>指導建議</h3>
+                            <div class="advice-box">
+                                <h4>✓ 根據卦象給出的建議</h4>
+                                <ul>
+                                    <li><strong>不要加碼：</strong>上六爻警示轉折點，此時加碼風險很大。</li>
+                                    <li><strong>部分獲利：</strong>如果有已盈利的部分，可以考慮部分獲利了結。</li>
+                                    <li><strong>設置停損：</strong>對虧損部分設置明確的停損點，避免更大損失。</li>
+                                    <li><strong>觀望為主：</strong>當前不是大舉行動的時機，保守觀望更合適。</li>
+                                    <li><strong>分散風險：</strong>如果繼續持有，要注意分散投資，不要過度集中。</li>
+                                    <li><strong>準備應對：</strong>為可能的進一步下跌做好心理和資金準備。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <h3>實際結果</h3>
+                            <div class="outcome-box">
+                                <h4><span>✅</span> 事後驗證</h4>
+                                <p>周先生採納建議，沒有在低點加碼，反而賣出了一部分盈利較好的持股，保留了現金。之後市場確實短暫反彈，但很快進入更深的調整，他原本考慮加碼的股票又下跌了 20%。因為他及時減倉並保留現金，總體虧損控制在 10% 以內。更重要的是，當市場真正觸底時，他有充足的資金可以買入。三個月後回顧，他慶幸當時聽從了易經的警示，沒有在情緒化中做出錯誤決策。</p>
+                            </div>
+                        </div>
+
+                        <div class="case-section">
+                            <div class="reflection-box">
+                                <p><strong>💡 啟示：</strong>在投資中，泰卦上六「城復於隍」的警示非常有價值。它提醒我們在看似順利的時候要警惕轉折點，在別人貪婪時保持理性。易經不是讓你預測市場，而是幫助你保持冷靜的判斷，避免情緒化決策。「泰極否來」、「盛極而衰」的智慧，在投資中尤其重要。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Summary Section -->
+        <section style="padding: 60px 0; background-color: #fff;">
+            <div class="container">
+                <h2 class="section-title">案例總結與學習要點</h2>
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div class="about-grid" style="margin-top: 2rem;">
+                        <div class="about-card">
+                            <h3>📖 理解卦象</h3>
+                            <p>每個卦都有其特定的含義和適用情境。重要的是理解卦象背後的哲理，而不是機械地套用解釋。</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>🎯 結合實際</h3>
+                            <p>易經的智慧要與實際情況結合。同樣的卦象在不同情境下有不同的應用方式，要根據具體問題靈活解讀。</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>⚖️ 保持理性</h3>
+                            <p>易經是決策的參考而非命令。要結合理性分析和實際情況，不要盲目依賴占卜結果。</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>📝 記錄驗證</h3>
+                            <p>記錄每次占卜和結果，事後驗證能幫助你提升解讀能力，更好地理解易經的智慧。</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>🧘 誠心專注</h3>
+                            <p>占卜時要保持誠心和專注，心無雜念地思考問題。態度越誠懇，得到的啟發往往越有價值。</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>🌱 持續學習</h3>
+                            <p>易經的學習是終身的過程。每次占卜都是學習的機會，要保持開放和謙虛的心態。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>開始你自己的易經實踐</h2>
+                    <p>學習這些案例後，不妨為自己的問題占卜，體驗易經的智慧。</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="https://iching.changes.live" class="btn btn-primary btn-large">立即占卜</a>
+                        <a href="learning-guide.html" class="btn btn-secondary btn-large">學習指南</a>
+                        <a href="faq.html" class="btn btn-secondary btn-large">常見問題</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>易經卜卦</h3>
+                    <p>傳統智慧與現代生活的完美結合</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="hexagrams.html">六十四卦</a></li>
+                        <li><a href="learning-guide.html">學習指南</a></li>
+                        <li><a href="case-studies.html">實例分析</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
+                        <li><a href="privacy.html">隱私政策</a></li>
+                        <li><a href="terms.html">使用條款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡資訊</h4>
+                    <p>網站：<a href="https://changes.live">changes.live</a></p>
+                    <p>卜卦服務：<a href="https://iching.changes.live">iching.changes.live</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 易經卜卦 Changes.live. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

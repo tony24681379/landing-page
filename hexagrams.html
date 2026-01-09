@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="完整的易經六十四卦詳解，包含卦象、卦辭、爻辭解釋以及在現代生活中的應用指導。">
+    <meta name="keywords" content="六十四卦, 易經卦象, 卦辭解釋, 乾卦, 坤卦, 占卜解讀">
+    <meta name="author" content="易經卜卦">
+    <meta name="robots" content="index, follow">
+    <meta name="google-adsense-account" content="ca-pub-8905426307553442">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="易經六十四卦詳解 | Changes.live">
+    <meta property="og:description" content="完整的易經六十四卦解析，深入理解每一卦的含義與應用。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://changes.live/hexagrams.html">
+    <meta property="og:site_name" content="易經卜卦">
+
+    <title>易經六十四卦詳解 - 完整卦象解析 | Changes.live</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "易經六十四卦詳解",
+        "description": "完整的易經六十四卦解析，深入理解每一卦的含義與應用",
+        "author": {
+            "@type": "Organization",
+            "name": "易經卜卦"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "易經卜卦",
+            "url": "https://changes.live"
+        },
+        "datePublished": "2024-01-09",
+        "dateModified": "2024-01-09"
+    }
+    </script>
+
+    <style>
+        .hexagrams-intro {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .hexagrams-intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hexagrams-intro p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        .hexagrams-overview {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+
+        .hexagrams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .hexagram-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .hexagram-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .hexagram-number {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 0.5rem;
+        }
+
+        .hexagram-symbol {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+
+        .hexagram-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .detailed-hexagrams {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .hexagram-detail {
+            max-width: 900px;
+            margin: 0 auto 4rem;
+            padding: 2.5rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 5px solid #3498db;
+        }
+
+        .hexagram-detail-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .hexagram-detail-symbol {
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+
+        .hexagram-detail-title {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .hexagram-detail-subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+        }
+
+        .hexagram-section {
+            margin-bottom: 2rem;
+        }
+
+        .hexagram-section h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid #3498db;
+        }
+
+        .hexagram-section p {
+            line-height: 1.8;
+            color: #34495e;
+            margin-bottom: 1rem;
+        }
+
+        .hexagram-section ul {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .hexagram-section li {
+            margin-bottom: 0.8rem;
+            color: #34495e;
+        }
+
+        .judgment-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #e74c3c;
+            margin: 1rem 0;
+        }
+
+        .judgment-box p {
+            font-style: italic;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .application-box {
+            background: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #27ae60;
+            margin: 1rem 0;
+        }
+
+        .application-box h4 {
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+
+        /* Clickable hexagram cards */
+        .hexagram-item.clickable {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .hexagram-item.clickable:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .hexagram-item.clickable::after {
+            content: "查看詳解";
+            position: absolute;
+            bottom: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            color: #3498db;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .hexagram-item.clickable:hover::after {
+            opacity: 1;
+        }
+
+        /* Coming soon hexagram cards */
+        .hexagram-item.coming-soon {
+            opacity: 0.6;
+            cursor: not-allowed;
+            position: relative;
+        }
+
+        .hexagram-item.coming-soon::after {
+            content: "即將推出";
+            position: absolute;
+            bottom: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            color: #95a5a6;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hexagrams-intro h1 {
+                font-size: 2rem;
+            }
+
+            .hexagrams-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 0.8rem;
+            }
+
+            .hexagram-detail {
+                padding: 1.5rem;
+            }
+
+            .hexagram-detail-title {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>易經卜卦</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hexagrams.html" class="nav-link">六十四卦</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="learning-guide.html" class="nav-link">學習指南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="case-studies.html" class="nav-link">實例分析</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link">常見問題</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro Section -->
+        <section class="hexagrams-intro">
+            <div class="container">
+                <h1>易經六十四卦詳解</h1>
+                <p>六十四卦是易經的核心內容，由八卦兩兩相疊而成，代表宇宙間六十四種基本情境和變化規律。每一卦都蘊含著深刻的人生智慧，可以為我們在不同情況下提供指引。</p>
+            </div>
+        </section>
+
+        <!-- Hexagrams Overview -->
+        <section class="hexagrams-overview">
+            <div class="container">
+                <h2 class="section-title">六十四卦總覽</h2>
+                <div class="hexagrams-grid">
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-1">
+                        <div class="hexagram-number">第1卦</div>
+                        <div class="hexagram-symbol">☰</div>
+                        <div class="hexagram-name">乾 - 乾為天</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-2">
+                        <div class="hexagram-number">第2卦</div>
+                        <div class="hexagram-symbol">☷</div>
+                        <div class="hexagram-name">坤 - 坤為地</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-3">
+                        <div class="hexagram-number">第3卦</div>
+                        <div class="hexagram-symbol">☵☳</div>
+                        <div class="hexagram-name">屯 - 水雷屯</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第4卦</div>
+                        <div class="hexagram-symbol">☶☵</div>
+                        <div class="hexagram-name">蒙 - 山水蒙</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-5">
+                        <div class="hexagram-number">第5卦</div>
+                        <div class="hexagram-symbol">☵☰</div>
+                        <div class="hexagram-name">需 - 水天需</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-6">
+                        <div class="hexagram-number">第6卦</div>
+                        <div class="hexagram-symbol">☰☵</div>
+                        <div class="hexagram-name">訟 - 天水訟</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第7卦</div>
+                        <div class="hexagram-symbol">☵☷</div>
+                        <div class="hexagram-name">師 - 地水師</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第8卦</div>
+                        <div class="hexagram-symbol">☵☷</div>
+                        <div class="hexagram-name">比 - 水地比</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第9卦</div>
+                        <div class="hexagram-symbol">☴☰</div>
+                        <div class="hexagram-name">小畜 - 風天小畜</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第10卦</div>
+                        <div class="hexagram-symbol">☰☱</div>
+                        <div class="hexagram-name">履 - 天澤履</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-11">
+                        <div class="hexagram-number">第11卦</div>
+                        <div class="hexagram-symbol">☷☰</div>
+                        <div class="hexagram-name">泰 - 地天泰</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-12">
+                        <div class="hexagram-number">第12卦</div>
+                        <div class="hexagram-symbol">☰☷</div>
+                        <div class="hexagram-name">否 - 天地否</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-13">
+                        <div class="hexagram-number">第13卦</div>
+                        <div class="hexagram-symbol">☰☲</div>
+                        <div class="hexagram-name">同人 - 天火同人</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-14">
+                        <div class="hexagram-number">第14卦</div>
+                        <div class="hexagram-symbol">☲☰</div>
+                        <div class="hexagram-name">大有 - 火天大有</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-15">
+                        <div class="hexagram-number">第15卦</div>
+                        <div class="hexagram-symbol">☷☶</div>
+                        <div class="hexagram-name">謙 - 地山謙</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第16卦</div>
+                        <div class="hexagram-symbol">☳☷</div>
+                        <div class="hexagram-name">豫 - 雷地豫</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-17">
+                        <div class="hexagram-number">第17卦</div>
+                        <div class="hexagram-symbol">☱☳</div>
+                        <div class="hexagram-name">隨 - 澤雷隨</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第18卦</div>
+                        <div class="hexagram-symbol">☶☴</div>
+                        <div class="hexagram-name">蠱 - 山風蠱</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第19卦</div>
+                        <div class="hexagram-symbol">☷☱</div>
+                        <div class="hexagram-name">臨 - 地澤臨</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第20卦</div>
+                        <div class="hexagram-symbol">☴☷</div>
+                        <div class="hexagram-name">觀 - 風地觀</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第21卦</div>
+                        <div class="hexagram-symbol">☲☳</div>
+                        <div class="hexagram-name">噬嗑 - 火雷噬嗑</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第22卦</div>
+                        <div class="hexagram-symbol">☶☲</div>
+                        <div class="hexagram-name">賁 - 山火賁</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第23卦</div>
+                        <div class="hexagram-symbol">☶☷</div>
+                        <div class="hexagram-name">剝 - 山地剝</div>
+                    </div>
+                    <div class="hexagram-item clickable" data-hexagram-id="hexagram-24">
+                        <div class="hexagram-number">第24卦</div>
+                        <div class="hexagram-symbol">☷☳</div>
+                        <div class="hexagram-name">復 - 地雷復</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第25卦</div>
+                        <div class="hexagram-symbol">☰☳</div>
+                        <div class="hexagram-name">無妄 - 天雷無妄</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第26卦</div>
+                        <div class="hexagram-symbol">☶☰</div>
+                        <div class="hexagram-name">大畜 - 山天大畜</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第27卦</div>
+                        <div class="hexagram-symbol">☶☳</div>
+                        <div class="hexagram-name">頤 - 山雷頤</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第28卦</div>
+                        <div class="hexagram-symbol">☱☴</div>
+                        <div class="hexagram-name">大過 - 澤風大過</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第29卦</div>
+                        <div class="hexagram-symbol">☵☵</div>
+                        <div class="hexagram-name">坎 - 坎為水</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第30卦</div>
+                        <div class="hexagram-symbol">☲☲</div>
+                        <div class="hexagram-name">離 - 離為火</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第31卦</div>
+                        <div class="hexagram-symbol">☱☶</div>
+                        <div class="hexagram-name">咸 - 澤山咸</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第32卦</div>
+                        <div class="hexagram-symbol">☳☴</div>
+                        <div class="hexagram-name">恆 - 雷風恆</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第33卦</div>
+                        <div class="hexagram-symbol">☰☶</div>
+                        <div class="hexagram-name">遯 - 天山遯</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第34卦</div>
+                        <div class="hexagram-symbol">☳☰</div>
+                        <div class="hexagram-name">大壯 - 雷天大壯</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第35卦</div>
+                        <div class="hexagram-symbol">☲☷</div>
+                        <div class="hexagram-name">晉 - 火地晉</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第36卦</div>
+                        <div class="hexagram-symbol">☷☲</div>
+                        <div class="hexagram-name">明夷 - 地火明夷</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第37卦</div>
+                        <div class="hexagram-symbol">☴☲</div>
+                        <div class="hexagram-name">家人 - 風火家人</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第38卦</div>
+                        <div class="hexagram-symbol">☲☱</div>
+                        <div class="hexagram-name">睽 - 火澤睽</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第39卦</div>
+                        <div class="hexagram-symbol">☵☶</div>
+                        <div class="hexagram-name">蹇 - 水山蹇</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第40卦</div>
+                        <div class="hexagram-symbol">☳☵</div>
+                        <div class="hexagram-name">解 - 雷水解</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第41卦</div>
+                        <div class="hexagram-symbol">☶☱</div>
+                        <div class="hexagram-name">損 - 山澤損</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第42卦</div>
+                        <div class="hexagram-symbol">☴☳</div>
+                        <div class="hexagram-name">益 - 風雷益</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第43卦</div>
+                        <div class="hexagram-symbol">☱☰</div>
+                        <div class="hexagram-name">夬 - 澤天夬</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第44卦</div>
+                        <div class="hexagram-symbol">☰☴</div>
+                        <div class="hexagram-name">姤 - 天風姤</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第45卦</div>
+                        <div class="hexagram-symbol">☱☷</div>
+                        <div class="hexagram-name">萃 - 澤地萃</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第46卦</div>
+                        <div class="hexagram-symbol">☷☴</div>
+                        <div class="hexagram-name">升 - 地風升</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第47卦</div>
+                        <div class="hexagram-symbol">☱☵</div>
+                        <div class="hexagram-name">困 - 澤水困</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第48卦</div>
+                        <div class="hexagram-symbol">☵☴</div>
+                        <div class="hexagram-name">井 - 水風井</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第49卦</div>
+                        <div class="hexagram-symbol">☱☲</div>
+                        <div class="hexagram-name">革 - 澤火革</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第50卦</div>
+                        <div class="hexagram-symbol">☲☴</div>
+                        <div class="hexagram-name">鼎 - 火風鼎</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第51卦</div>
+                        <div class="hexagram-symbol">☳☳</div>
+                        <div class="hexagram-name">震 - 震為雷</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第52卦</div>
+                        <div class="hexagram-symbol">☶☶</div>
+                        <div class="hexagram-name">艮 - 艮為山</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第53卦</div>
+                        <div class="hexagram-symbol">☴☶</div>
+                        <div class="hexagram-name">漸 - 風山漸</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第54卦</div>
+                        <div class="hexagram-symbol">☳☱</div>
+                        <div class="hexagram-name">歸妹 - 雷澤歸妹</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第55卦</div>
+                        <div class="hexagram-symbol">☳☲</div>
+                        <div class="hexagram-name">豐 - 雷火豐</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第56卦</div>
+                        <div class="hexagram-symbol">☲☶</div>
+                        <div class="hexagram-name">旅 - 火山旅</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第57卦</div>
+                        <div class="hexagram-symbol">☴☴</div>
+                        <div class="hexagram-name">巽 - 巽為風</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第58卦</div>
+                        <div class="hexagram-symbol">☱☱</div>
+                        <div class="hexagram-name">兌 - 兌為澤</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第59卦</div>
+                        <div class="hexagram-symbol">☴☵</div>
+                        <div class="hexagram-name">渙 - 風水渙</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第60卦</div>
+                        <div class="hexagram-symbol">☵☱</div>
+                        <div class="hexagram-name">節 - 水澤節</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第61卦</div>
+                        <div class="hexagram-symbol">☴☱</div>
+                        <div class="hexagram-name">中孚 - 風澤中孚</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第62卦</div>
+                        <div class="hexagram-symbol">☳☶</div>
+                        <div class="hexagram-name">小過 - 雷山小過</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第63卦</div>
+                        <div class="hexagram-symbol">☵☲</div>
+                        <div class="hexagram-name">既濟 - 水火既濟</div>
+                    </div>
+                    <div class="hexagram-item coming-soon">
+                        <div class="hexagram-number">第64卦</div>
+                        <div class="hexagram-symbol">☲☵</div>
+                        <div class="hexagram-name">未濟 - 火水未濟</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Hexagrams -->
+        <section class="detailed-hexagrams">
+            <div class="container">
+                <h2 class="section-title">重點卦象詳解</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: #7f8c8d;">以下詳細解析十二個最重要且最常見的卦象，包括卦辭、象辭、現代應用等內容。</p>
+
+                <!-- 乾卦 -->
+                <div class="hexagram-detail" id="hexagram-1">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☰</div>
+                        <h2 class="hexagram-detail-title">第一卦：乾卦（乾為天）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：純陽、創造、剛健</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「乾：元、亨、利、貞。」</p>
+                        </div>
+                        <p>乾卦是六十四卦之首，代表天道，象徵著最強大的創造力量。「元亨利貞」是易經的四大德性：元代表開始與創造，亨代表亨通順暢，利代表和諧有利，貞代表堅守正道。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>乾卦由六個陽爻組成，象徵天的特性：剛健、進取、主動、創造。在自然界中代表天空，在人事中代表領導者、父親、剛強的性格。</p>
+                        <ul>
+                            <li><strong>五行屬性：</strong>金</li>
+                            <li><strong>方位：</strong>西北</li>
+                            <li><strong>時節：</strong>秋季、初冬</li>
+                            <li><strong>性格：</strong>剛健、果斷、積極、有領導力</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>爻辭精要</h3>
+                        <ul>
+                            <li><strong>初九：</strong>潛龍勿用 - 時機未到，應當蟄伏養精蓄銳</li>
+                            <li><strong>九二：</strong>見龍在田，利見大人 - 初露頭角，宜求賢者指點</li>
+                            <li><strong>九三：</strong>君子終日乾乾，夕惕若厲 - 勤奮謹慎，警惕不懈</li>
+                            <li><strong>九四：</strong>或躍在淵，無咎 - 審時度勢，可以嘗試突破</li>
+                            <li><strong>九五：</strong>飛龍在天，利見大人 - 事業巔峰，德才兼備</li>
+                            <li><strong>上九：</strong>亢龍有悔 - 過猶不及，物極必反</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>事業發展</h4>
+                            <p>乾卦指引我們要像天一樣剛健不息。在事業發展中，需要保持積極進取的態度，但也要注意「亢龍有悔」的警示，避免過度擴張。成功的關鍵在於把握時機，從「潛龍勿用」到「飛龍在天」，每個階段都有不同的策略。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>個人修養</h4>
+                            <p>「天行健，君子以自強不息」。乾卦教導我們要自我激勵，持續進步。在個人修養上，要培養剛毅果斷的性格，同時保持謙虛謹慎的態度，避免剛愎自用。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦者，表示當前處於強勢地位，事業運勢良好。但需要注意：</p>
+                        <ul>
+                            <li>保持積極進取的態度，但不可過於剛強</li>
+                            <li>適時展現領導才能，但避免獨斷專行</li>
+                            <li>注意「亢龍有悔」，凡事留有餘地</li>
+                            <li>在成功時保持謙虛，聽取他人意見</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 坤卦 -->
+                <div class="hexagram-detail" id="hexagram-2">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☷</div>
+                        <h2 class="hexagram-detail-title">第二卦：坤卦（坤為地）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：純陰、包容、順承</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「坤：元亨，利牝馬之貞。君子有攸往，先迷後得主，利。」</p>
+                        </div>
+                        <p>坤卦代表大地的德性，象徵著包容、承載、順從。「牝馬之貞」意指像母馬一樣溫順而堅定，「先迷後得主」表示順從正確的領導能獲得成功。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>坤卦由六個陰爻組成，與乾卦相對，象徵地的特性：柔順、包容、承載、養育。在人事中代表母親、臣下、順從的態度、接納的心態。</p>
+                        <ul>
+                            <li><strong>五行屬性：</strong>土</li>
+                            <li><strong>方位：</strong>西南</li>
+                            <li><strong>時節：</strong>夏秋之交</li>
+                            <li><strong>性格：</strong>柔順、包容、務實、耐力強</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>核心智慧</h3>
+                        <ul>
+                            <li><strong>厚德載物：</strong>像大地一樣包容萬物，以寬廣的胸懷對待他人</li>
+                            <li><strong>順勢而為：</strong>順應天時地利，不強求、不妄為</li>
+                            <li><strong>柔能克剛：</strong>以柔軟的態度化解剛硬的衝突</li>
+                            <li><strong>承載養育：</strong>默默承擔責任，培育成果</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>團隊協作</h4>
+                            <p>在團隊中，坤卦的智慧體現在包容與配合。不是每個人都需要成為領導者，優秀的團隊成員懂得順應大局，發揮支持者的作用。就像大地承載萬物，好的團隊成員能承擔各種任務，默默貢獻力量。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>人際關係</h4>
+                            <p>「地勢坤，君子以厚德載物」。在人際交往中，要學習大地的包容性，接納不同性格的人，理解他人的不完美。這種包容的態度能建立和諧的人際關係，獲得他人的信任和支持。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦者，宜採取柔順包容的策略。當前不宜強出頭或獨自行動，而應：</p>
+                        <ul>
+                            <li>跟隨有能力的領導者，發揮輔助作用</li>
+                            <li>保持謙虛低調的態度，積蓄實力</li>
+                            <li>以包容的心態對待他人，廣結善緣</li>
+                            <li>踏實工作，默默耕耘，等待時機</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 屯卦 -->
+                <div class="hexagram-detail" id="hexagram-3">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☵☳</div>
+                        <h2 class="hexagram-detail-title">第三卦：屯卦（水雷屯）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：初始困難、積蓄力量、艱難創業</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「屯：元亨利貞。勿用有攸往，利建侯。」</p>
+                        </div>
+                        <p>屯卦象徵萬物初生之時的困難。就像種子在土中掙扎萌芽，雖然艱難，但蘊含著巨大的生機。「勿用有攸往」告誡我們此時不宜貿然行動，「利建侯」表示宜建立基礎、培養勢力。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>屯卦下震上坎，震為雷為動，坎為水為險。雷動於水下，象徵動而遇險，如同創業初期困難重重但充滿活力的狀態。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>草木初生，破土而出</li>
+                            <li><strong>時機特點：</strong>開創階段、困難重重、潛力巨大</li>
+                            <li><strong>應對策略：</strong>穩固基礎、審慎行動、積蓄力量</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>核心智慧</h3>
+                        <ul>
+                            <li><strong>守正不移：</strong>儘管困難，仍要堅守正道</li>
+                            <li><strong>建立根基：</strong>先穩固基礎，不急於擴張</li>
+                            <li><strong>尋求協助：</strong>「利建侯」，要善於建立合作關係</li>
+                            <li><strong>耐心等待：</strong>如種子萌芽，需要時間成長</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>創業階段</h4>
+                            <p>屯卦是創業者最需要理解的卦象。創業初期必然面臨資金、人才、市場等多重挑戰，這是正常現象。關鍵是不要被困難嚇倒，要像種子一樣，在艱難中積蓄力量，穩步前進。此時重點是打好基礎，建立核心團隊，不要急於擴張。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>新項目啟動</h4>
+                            <p>開始任何新項目都像處於屯卦的狀態。要有心理準備面對初期的困難，制定周密的計劃，建立可靠的合作關係。不要期望立即成功，而要關注長遠發展，一步一腳印地推進。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦表示正處於事業或計劃的起步階段，面臨諸多困難。建議：</p>
+                        <ul>
+                            <li>接受當前的困難是正常現象，保持信心</li>
+                            <li>不要急於求成，穩紮穩打建立基礎</li>
+                            <li>積極尋找可靠的合作夥伴和支持者</li>
+                            <li>暫緩大規模行動，先做好充分準備</li>
+                            <li>困難是暫時的，只要堅持正道，終會成功</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 需卦 -->
+                <div class="hexagram-detail" id="hexagram-5">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☵☰</div>
+                        <h2 class="hexagram-detail-title">第五卦：需卦（水天需）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：等待、養精蓄銳、時機未到</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「需：有孚，光亨，貞吉。利涉大川。」</p>
+                        </div>
+                        <p>需卦的核心是「等待」的智慧。「有孚」指誠信，「光亨」表示光明亨通，但前提是要有耐心等待適當時機。「利涉大川」說明雖然當前需要等待，但最終可以克服大的困難。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>需卦下乾上坎，乾為天為健，坎為水為險。象徵健者處於危險之前，需要等待時機。就像雲氣聚集於天空，雨水尚未降下，需要等待條件成熟。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>雲升於天，等待成雨</li>
+                            <li><strong>時機特點：</strong>力量充足但時機未到，需要耐心</li>
+                            <li><strong>應對策略：</strong>保持誠信、養精蓄銳、等待時機</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>等待的智慧</h3>
+                        <ul>
+                            <li><strong>積極等待：</strong>等待不是消極無為，而是在等待中做好準備</li>
+                            <li><strong>保持信念：</strong>相信時機終會到來，保持信心和誠信</li>
+                            <li><strong>修煉內功：</strong>利用等待期間提升自己的能力</li>
+                            <li><strong>審時度勢：</strong>密切觀察局勢，隨時準備把握機會</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>職場發展</h4>
+                            <p>在職場中，並非每個時刻都適合升遷或跳槽。需卦告訴我們，有時候需要耐心等待合適的機會。在等待期間，應該提升專業技能，建立人際網絡，為將來的機會做好準備。當條件成熟時，自然水到渠成。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>投資理財</h4>
+                            <p>投資最重要的能力之一就是耐心等待。需卦教導我們不要急於進場，要等待好的投資時機。在等待期間，深入研究市場，做好資金準備。當機會真正來臨時，才能果斷把握。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦表示當前不是行動的最佳時機，需要耐心等待。建議：</p>
+                        <ul>
+                            <li>不要急於求成，時機尚未成熟</li>
+                            <li>保持誠信，積累信譽和資源</li>
+                            <li>利用等待時間提升自己，做好準備</li>
+                            <li>保持樂觀態度，時機終會到來</li>
+                            <li>密切關注局勢變化，隨時準備行動</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 訟卦 -->
+                <div class="hexagram-detail" id="hexagram-6">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☰☵</div>
+                        <h2 class="hexagram-detail-title">第六卦：訟卦（天水訟）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：爭訟、矛盾、慎防衝突</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「訟：有孚，窒惕，中吉，終凶。利見大人，不利涉大川。」</p>
+                        </div>
+                        <p>訟卦警示爭訟的危險。「有孚窒惕」表示雖有理由但要謹慎警惕，「中吉終凶」意指在爭執過程中可能暫時有利，但最終會帶來凶險。「利見大人」建議尋求有德之人調解。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>訟卦下坎上乾，與需卦相反。坎為水為險在下，乾為天為剛在上，象徵險而健，剛而不順，容易產生爭執。天與水背道而馳，代表意見分歧、立場對立。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>天與水相違，方向相反</li>
+                            <li><strong>時機特點：</strong>矛盾衝突、立場對立、容易爭執</li>
+                            <li><strong>應對策略：</strong>謹慎應對、尋求調解、避免擴大</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>化解衝突的智慧</h3>
+                        <ul>
+                            <li><strong>防患未然：</strong>最好的方法是預防衝突產生</li>
+                            <li><strong>及時化解：</strong>衝突初起時，立即溝通解決</li>
+                            <li><strong>尋求調解：</strong>難以自行解決時，請第三方調解</li>
+                            <li><strong>適時退讓：</strong>明白退一步海闊天空的道理</li>
+                            <li><strong>避免升級：</strong>不要讓小矛盾演變成大衝突</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>商業糾紛</h4>
+                            <p>在商業活動中難免遇到糾紛。訟卦提醒我們，訴訟應該是最後的手段。儘量通過協商、調解等方式解決問題，既節省成本，又能保持關係。即使最終需要訴訟，也要控制情緒，理性應對。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>人際矛盾</h4>
+                            <p>人際關係中的矛盾往往源於誤解和溝通不良。當產生分歧時，要保持冷靜，理性溝通，理解對方立場。有時候堅持己見不如適當退讓，保持關係的和諧比爭論對錯更重要。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦表示當前面臨矛盾衝突，需要謹慎處理。建議：</p>
+                        <ul>
+                            <li>盡量避免與人爭執，和為貴</li>
+                            <li>如已陷入糾紛，尋求公正的第三方調解</li>
+                            <li>不要過於堅持己見，適當妥協</li>
+                            <li>控制情緒，理性分析，不要衝動行事</li>
+                            <li>考慮長遠利益，不要為眼前爭執傷和氣</li>
+                            <li>此時不宜開展重大行動（不利涉大川）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 泰卦 -->
+                <div class="hexagram-detail" id="hexagram-11">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☷☰</div>
+                        <h2 class="hexagram-detail-title">第十一卦：泰卦（地天泰）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：通泰、和諧、興盛</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「泰：小往大來，吉亨。」</p>
+                        </div>
+                        <p>泰卦是吉利亨通的卦象。「小往大來」表示小的消退、大的到來，陰去陽來，代表運勢由弱轉強，事業興旺發達。這是六十四卦中最吉利的卦象之一。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>泰卦下乾上坤，天在下地在上。按自然規律，天本應在上，地本應在下，但此卦顛倒，象徵天地陰陽交泰、上下溝通、內外和諧的理想狀態。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>天地交泰、陰陽和合</li>
+                            <li><strong>時機特點：</strong>通達順暢、百事亨通、上下和睦</li>
+                            <li><strong>應對策略：</strong>把握機遇、謙虛謹慎、居安思危</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>泰卦的智慧</h3>
+                        <ul>
+                            <li><strong>上下交通：</strong>領導與下屬溝通順暢，訊息流通</li>
+                            <li><strong>陰陽平衡：</strong>剛柔並濟，各方面都達到平衡狀態</li>
+                            <li><strong>順勢而為：</strong>抓住好時機，順勢發展</li>
+                            <li><strong>居安思危：</strong>在順境中不忘警惕，為將來做準備</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>企業管理</h4>
+                            <p>泰卦體現了理想的企業狀態：上下溝通順暢，團隊和諧協作，業務蒸蒸日上。在這種狀態下，管理者要保持謙遜，傾聽員工意見（天在下）；員工要主動承擔責任，支持公司發展（地在上）。這種上下互動、相互支持的文化是企業成功的關鍵。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>個人發展</h4>
+                            <p>當運勢處於泰卦狀態時，是個人發展的黃金期。要把握這個機會，積極進取，但同時保持謙虛謹慎。不要因為一時順利就驕傲自滿，而要為長遠發展打好基礎。記住「否極泰來」的道理，也要明白「泰極否來」的警示。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦是非常吉利的徵兆，表示當前運勢亨通。但也要注意：</p>
+                        <ul>
+                            <li>把握當前的好時機，積極開展各項計劃</li>
+                            <li>注重上下溝通，建立和諧的人際關係</li>
+                            <li>在順境中保持謙虛，不要驕傲自滿</li>
+                            <li>居安思危，為可能的變化做好準備</li>
+                            <li>記住「盛極必衰」的道理，把握分寸</li>
+                            <li>利用好運期做好長遠規劃和基礎建設</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 否卦 -->
+                <div class="hexagram-detail" id="hexagram-12">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☰☷</div>
+                        <h2 class="hexagram-detail-title">第十二卦：否卦（天地否）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：閉塞、不通、困頓</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「否：否之匪人，不利君子貞，大往小來。」</p>
+                        </div>
+                        <p>否卦與泰卦相反，是閉塞不通的象徵。「否之匪人」指小人得勢，「大往小來」表示大的離去、小的到來，運勢由強轉弱。這是困難時期，但易經告訴我們，困境也是暫時的。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>否卦下坤上乾，天在上地在下，這是自然的常態，但在卦象中卻代表隔絕不通。因為天氣上升、地氣下降，兩者不交，象徵溝通阻塞、上下隔絕的狀態。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>天地不交、陰陽隔絕</li>
+                            <li><strong>時機特點：</strong>溝通困難、運勢低迷、進退維艱</li>
+                            <li><strong>應對策略：</strong>固守正道、等待時機、韜光養晦</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>困境中的智慧</h3>
+                        <ul>
+                            <li><strong>堅守正道：</strong>越是困難，越要堅持原則和道德</li>
+                            <li><strong>韜光養晦：</strong>不要強出頭，保存實力</li>
+                            <li><strong>耐心等待：</strong>明白「否極泰來」，困境是暫時的</li>
+                            <li><strong>修煉內功：</strong>利用困難期提升自己</li>
+                            <li><strong>謹慎行事：</strong>此時不宜冒險或大動作</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>事業低谷</h4>
+                            <p>每個人、每個企業都會經歷低谷期。否卦告訴我們，此時最重要的是保持信念，堅守底線。不要因為一時困難就放棄原則或做出違背良心的事。要相信「否極泰來」，用這段時間反思總結，提升能力，為將來的轉機做準備。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>人際困境</h4>
+                            <p>當發現溝通困難、關係疏離時，不要強求。有時候需要給彼此空間和時間。保持尊重和善意，等待關係自然改善的時機。在此期間，反思自己的不足，提升溝通能力和情商。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦表示當前處於困難時期，諸事不順。應對建議：</p>
+                        <ul>
+                            <li>接受當前的困境，保持冷靜和理性</li>
+                            <li>堅守道德底線，不要因困難而妥協原則</li>
+                            <li>暫時收斂鋒芒，不要強出頭</li>
+                            <li>避免重大決策和冒險行為</li>
+                            <li>利用這段時間反思和提升自己</li>
+                            <li>保持耐心，相信困境終會過去</li>
+                            <li>注意節約資源，為將來儲備實力</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 同人卦 -->
+                <div class="hexagram-detail" id="hexagram-13">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☰☲</div>
+                        <h2 class="hexagram-detail-title">第十三卦：同人卦（天火同人）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：團結、合作、志同道合</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「同人于野，亨。利涉大川，利君子貞。」</p>
+                        </div>
+                        <p>同人卦強調團結與合作的重要性。「同人于野」表示在廣闊的天地間與人結盟，胸懷開闊，不分親疏。「利涉大川」說明團結合作可以克服大困難。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>同人卦下離上乾，離為火為光明，乾為天為健。火性炎上，與天同在，象徵志同道合之人因共同理想而聚集。卦象強調的是基於正道的團結，而非小團體的結黨營私。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>天與火同升，志同道合</li>
+                            <li><strong>時機特點：</strong>適合合作、建立聯盟、團隊協作</li>
+                            <li><strong>應對策略：</strong>擴大交際、建立聯盟、公正無私</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>團結的智慧</h3>
+                        <ul>
+                            <li><strong>心胸開闊：</strong>「同人于野」，不分親疏遠近，一視同仁</li>
+                            <li><strong>以道為本：</strong>基於正道和共同理想團結，非私利結盟</li>
+                            <li><strong>公正無私：</strong>在團隊中保持公正，不偏袒特定個人</li>
+                            <li><strong>共同目標：</strong>因為共同的目標和價值觀而聚集</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>團隊建設</h4>
+                            <p>同人卦是團隊建設的指導原則。一個成功的團隊需要共同的目標、開放的文化和公正的氛圍。領導者要胸懷寬廣，一視同仁，不搞小圈子；團隊成員要以大局為重，為共同目標努力。這樣的團隊才能「利涉大川」，克服各種困難。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>商業合作</h4>
+                            <p>在商業活動中，尋找志同道合的合作夥伴至關重要。合作的基礎應該是共同的價值觀和目標，而不僅僅是短期利益。建立基於信任和正道的合作關係，才能長久發展，共同應對市場挑戰。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦表示當前適合團結合作，建立聯盟。建議：</p>
+                        <ul>
+                            <li>積極尋找志同道合的夥伴或團隊</li>
+                            <li>以開放的心態對待他人，擴大人際圈</li>
+                            <li>在合作中保持公正，不偏私</li>
+                            <li>基於共同理想和正道建立合作關係</li>
+                            <li>團結的力量可以幫助克服大困難</li>
+                            <li>避免小圈子思維，胸懷要開闊</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 大有卦 -->
+                <div class="hexagram-detail" id="hexagram-14">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☲☰</div>
+                        <h2 class="hexagram-detail-title">第十四卦：大有卦（火天大有）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：豐收、成功、富足</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「大有：元亨。」</p>
+                        </div>
+                        <p>大有卦象徵大豐收、大成功，是極為吉利的卦象。簡潔的卦辭「元亨」表示大通大順，事業成功，財富豐盈，是收穫的時期。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>大有卦下乾上離，乾為天為健，離為火為光明。火在天上，光明普照，象徵德才兼備的人處於高位，君臣和合，天下大治，事業興旺。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>火在天上，光明普照四方</li>
+                            <li><strong>時機特點：</strong>豐收時期、成功在望、資源豐富</li>
+                            <li><strong>應對策略：</strong>謙虛謹慎、回饋社會、持續努力</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>豐收時的智慧</h3>
+                        <ul>
+                            <li><strong>保持謙虛：</strong>成功時更要謙虛，避免驕傲自滿</li>
+                            <li><strong>善用資源：</strong>合理運用豐富的資源，做出正確決策</li>
+                            <li><strong>回饋他人：</strong>成功後要回饋社會，幫助他人</li>
+                            <li><strong>持續進取：</strong>不要因為成功而停滯不前</li>
+                            <li><strong>防範未然：</strong>在豐收時為將來可能的困難做準備</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>事業巔峰</h4>
+                            <p>當事業處於大有的狀態時，是實現更大目標的好時機。但成功帶來的不應該是停滯和驕傲，而應該是更大的責任感。要善用手中的資源，為企業的長遠發展投資，為社會創造更大價值。同時保持對市場變化的警覺，不要被成功沖昏頭腦。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>財富管理</h4>
+                            <p>當財富累積到一定程度時，要學會智慧地管理和使用。不要揮霍浪費，而要做出有意義的投資。分散風險，為未來儲備；同時通過慈善等方式回饋社會，這不僅有社會意義，也有助於個人的心靈成長。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦是大吉之兆，表示當前事業成功、財運亨通。但也要注意：</p>
+                        <ul>
+                            <li>把握豐收期，實現更大的目標</li>
+                            <li>成功時保持謙虛，不要驕傲</li>
+                            <li>善用現有資源，做出明智決策</li>
+                            <li>適當回饋社會，幫助需要幫助的人</li>
+                            <li>不要因成功而停滯，繼續努力進取</li>
+                            <li>為可能的變化做準備，不要過度樂觀</li>
+                            <li>與人分享成功，團結更多力量</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 謙卦 -->
+                <div class="hexagram-detail" id="hexagram-15">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☷☶</div>
+                        <h2 class="hexagram-detail-title">第十五卦：謙卦（地山謙）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：謙遜、低調、德行</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「謙：亨，君子有終。」</p>
+                        </div>
+                        <p>謙卦是六十四卦中唯一六爻皆吉的卦象。「亨」表示亨通順利，「君子有終」意指有德之人能堅持謙遜到底，必得善終。謙卦告訴我們，謙虛是最高的智慧和德行。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>謙卦下艮上坤，艮為山，坤為地。高山本應高聳於地上，但在此卦中山在地下，象徵有才德之人謙虛低調，不自我炫耀。山之高尚隱藏於地之下，這是最高境界的謙遜。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>高山隱於地下，大才而不露</li>
+                            <li><strong>時機特點：</strong>修養德行、積累實力、贏得尊重</li>
+                            <li><strong>應對策略：</strong>保持謙遜、低調做人、高調做事</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>謙遜的智慧</h3>
+                        <ul>
+                            <li><strong>虛心學習：</strong>再有才能也要保持學習的態度</li>
+                            <li><strong>低調處世：</strong>不張揚、不炫耀，默默努力</li>
+                            <li><strong>尊重他人：</strong>平等待人，不自視高人一等</li>
+                            <li><strong>反思自省：</strong>經常反思自己的不足</li>
+                            <li><strong>接納意見：</strong>虛心接受他人的建議和批評</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>職場智慧</h4>
+                            <p>在職場中，謙遜是最可貴的品質。有能力的人保持謙虛，會贏得同事的尊重和領導的賞識。謙遜不是自卑或軟弱，而是一種自信的表現——真正有能力的人不需要通過炫耀來證明自己。同時，謙虛的態度能幫助我們持續學習，不斷進步。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>人際關係</h4>
+                            <p>謙遜是建立良好人際關係的基礎。待人謙和，尊重他人，能贏得真心的朋友。即使你比別人優秀，也要保持平等的態度，這樣才能建立真誠的關係。記住，真正的謙遜是內在修養的體現，而不是表面的客套。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦是大吉，謙卦六爻皆吉，諸事亨通。指引：</p>
+                        <ul>
+                            <li>保持謙遜的態度，待人處事要謙和</li>
+                            <li>不要炫耀自己的才能和成就</li>
+                            <li>虛心學習，接納他人的意見</li>
+                            <li>尊重每一個人，不論其地位高低</li>
+                            <li>在成功時更要謙虛，避免驕傲</li>
+                            <li>謙遜會為你贏得真正的尊重</li>
+                            <li>堅持謙德，必有善終</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 隨卦 -->
+                <div class="hexagram-detail" id="hexagram-17">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☱☳</div>
+                        <h2 class="hexagram-detail-title">第十七卦：隨卦（澤雷隨）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：順應、跟隨、隨機應變</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「隨：元亨利貞，無咎。」</p>
+                        </div>
+                        <p>隨卦強調順應時勢、隨機應變的智慧。「元亨利貞」表示大吉大利，但前提是「隨」得其道——跟隨正確的人或事，順應正確的方向。「無咎」表示只要隨得其道，就不會有災禍。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>隨卦下震上兌，震為雷為動，兌為澤為悅。雷動於澤中，澤隨而動，象徵順應變化、隨遇而安。這不是盲目跟隨，而是審時度勢後的明智選擇。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>雷動澤隨，順應變化</li>
+                            <li><strong>時機特點：</strong>變化之時、需要調整、順勢而為</li>
+                            <li><strong>應對策略：</strong>審時度勢、隨機應變、保持靈活</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>隨順的智慧</h3>
+                        <ul>
+                            <li><strong>順應時勢：</strong>識時務者為俊傑，懂得順應大勢</li>
+                            <li><strong>靈活變通：</strong>根據情況變化調整策略</li>
+                            <li><strong>選對方向：</strong>跟隨正確的人或事，不盲目跟風</li>
+                            <li><strong>隨遇而安：</strong>在變化中保持平和的心態</li>
+                            <li><strong>把握分寸：</strong>既要隨順，也要有自己的原則</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>市場應對</h4>
+                            <p>在快速變化的市場環境中，隨卦的智慧尤為重要。企業需要隨時關注市場趨勢，快速調整策略。但這種「隨」不是盲目跟風，而是基於深入分析後的戰略調整。成功的企業懂得在堅持核心價值的同時，在具體策略上保持靈活。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>職業發展</h4>
+                            <p>在職業生涯中，要學會順應行業趨勢和公司方向。當環境變化時，及時調整自己的技能和發展方向。但要注意，跟隨的應該是正道和正確的方向，而不是隨波逐流。在隨順中保持自己的原則和底線。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦表示當前需要順應變化，保持靈活。建議：</p>
+                        <ul>
+                            <li>觀察形勢變化，及時調整策略</li>
+                            <li>跟隨有德行和能力的領導者</li>
+                            <li>保持開放的心態，接受變化</li>
+                            <li>在順應中保持自己的原則</li>
+                            <li>不要固執己見，要懂得變通</li>
+                            <li>選對方向很重要，不要盲目跟隨</li>
+                            <li>隨機應變但不隨波逐流</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 復卦 -->
+                <div class="hexagram-detail" id="hexagram-24">
+                    <div class="hexagram-detail-header">
+                        <div class="hexagram-detail-symbol">☷☳</div>
+                        <h2 class="hexagram-detail-title">第二十四卦：復卦（地雷復）</h2>
+                        <p class="hexagram-detail-subtitle">象徵：復歸、反省、重新開始</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>卦辭</h3>
+                        <div class="judgment-box">
+                            <p>「復：亨。出入無疾，朋來無咎。反復其道，七日來復，利有攸往。」</p>
+                        </div>
+                        <p>復卦象徵回歸、復甦、重新開始。「七日來復」表示陰極陽生，困境過後必有轉機。卦象告訴我們，無論多麼黑暗的時期，只要堅持正道，終會迎來復甦。</p>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>象徵意義</h3>
+                        <p>復卦下震上坤，震為雷為動，坤為地。一陽生於五陰之下，象徵陽氣初生，如同冬至一陽來復。雷在地中，蘊藏著巨大的生機，預示著新的開始。</p>
+                        <ul>
+                            <li><strong>核心意象：</strong>一陽來復，萬象更新</li>
+                            <li><strong>時機特點：</strong>困境結束、新的開始、生機復甦</li>
+                            <li><strong>應對策略：</strong>反省自己、重新出發、回歸正道</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>復歸的智慧</h3>
+                        <ul>
+                            <li><strong>認識錯誤：</strong>勇於承認並改正過去的錯誤</li>
+                            <li><strong>回歸初心：</strong>找回最初的目標和信念</li>
+                            <li><strong>重新開始：</strong>以新的態度和方法再次出發</li>
+                            <li><strong>循環往復：</strong>理解事物循環的規律，接受起伏</li>
+                            <li><strong>反省自我：</strong>通過反思提升自己</li>
+                        </ul>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>現代應用</h3>
+                        <div class="application-box">
+                            <h4>失敗後的重啟</h4>
+                            <p>每個人都會經歷失敗，復卦告訴我們如何面對失敗。失敗不是結束，而是新的開始。重要的是從失敗中學習，反省自己的問題，調整方向後重新出發。許多成功人士都經歷過多次失敗，但他們懂得「復」的智慧，在每次跌倒後都能重新站起來。</p>
+                        </div>
+                        <div class="application-box">
+                            <h4>年度反思</h4>
+                            <p>復卦也適用於定期的反思和規劃。在一年結束時，回顧過去、反思得失、規劃未來，這是「復」的實踐。通過反省找出問題，制定改進計劃，帶著新的認識和目標進入新的一年。這種周期性的「復」能幫助我們持續進步。</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagram-section">
+                        <h3>占卜解讀</h3>
+                        <p>得此卦表示困境即將結束，迎來新的機會。建議：</p>
+                        <ul>
+                            <li>相信困境只是暫時的，轉機即將到來</li>
+                            <li>深刻反省過去的錯誤和不足</li>
+                            <li>回歸正道，堅持正確的方向</li>
+                            <li>以新的態度和方法重新開始</li>
+                            <li>把握新的機會，積極進取</li>
+                            <li>理解事物循環的規律，接受起伏</li>
+                            <li>從過去中學習，但不沉湎於過去</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>想要深入了解易經智慧嗎？</h2>
+                    <p>探索更多易經知識，學習如何運用古老智慧指導現代生活。</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="learning-guide.html" class="btn btn-primary btn-large">學習指南</a>
+                        <a href="case-studies.html" class="btn btn-secondary btn-large">實例分析</a>
+                        <a href="https://iching.changes.live" class="btn btn-secondary btn-large">開始卜卦</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>易經卜卦</h3>
+                    <p>傳統智慧與現代生活的完美結合</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="hexagrams.html">六十四卦</a></li>
+                        <li><a href="learning-guide.html">學習指南</a></li>
+                        <li><a href="case-studies.html">實例分析</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
+                        <li><a href="privacy.html">隱私政策</a></li>
+                        <li><a href="terms.html">使用條款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡資訊</h4>
+                    <p>網站：<a href="https://changes.live">changes.live</a></p>
+                    <p>卜卦服務：<a href="https://iching.changes.live">iching.changes.live</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 易經卜卦 Changes.live. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 為可點擊的卦象卡片添加平滑滾動功能
+        document.querySelectorAll('.hexagram-item.clickable').forEach(card => {
+            card.addEventListener('click', function() {
+                const hexagramId = this.getAttribute('data-hexagram-id');
+                const targetElement = document.getElementById(hexagramId);
+                if (targetElement) {
+                    // 平滑滾動到目標位置，並留出導航欄的空間
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

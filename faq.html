@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="易經占卜常見問題解答：關於易經學習、占卜方法、卦象解讀等常見疑問的詳細回答，幫助你更好地理解和應用易經。">
+    <meta name="keywords" content="易經常見問題, FAQ, 占卜疑問, 易經學習問題, 卦象解讀, 易經答疑">
+    <meta name="author" content="易經卜卦">
+    <meta name="robots" content="index, follow">
+    <meta name="google-adsense-account" content="ca-pub-8905426307553442">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="易經常見問題解答 | Changes.live">
+    <meta property="og:description" content="回答關於易經學習和占卜的各種常見疑問。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://changes.live/faq.html">
+    <meta property="og:site_name" content="易經卜卦">
+
+    <title>易經常見問題解答 - FAQ | Changes.live</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "易經是什麼？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "易經是中國古代的一部經典著作，被譽為群經之首。它不僅是占卜之書，更是哲學思想的寶庫，包含了豐富的人生智慧和自然法則。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "易經占卜準確嗎？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "易經占卜的準確性取決於多個因素，包括占卜者的誠心、解讀能力、對情境的理解等。它提供的是一種思考角度和智慧參考，而非絕對的預言。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "完全沒基礎可以學易經嗎？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "完全可以。易經的學習是循序漸進的過程，零基礎學習者可以從基本概念開始，逐步深入。重要的是保持耐心和持續學習的態度。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        .faq-intro {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .faq-intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq-intro p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        .faq-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .faq-categories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 0.7rem 1.8rem;
+            background: white;
+            border: 2px solid #3498db;
+            border-radius: 25px;
+            color: #3498db;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .category-btn:hover {
+            background: #3498db;
+            color: white;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-category-section {
+            margin-bottom: 3rem;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3498db;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #f8f9fa;
+        }
+
+        .faq-question h3 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin: 0;
+            flex: 1;
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            color: #3498db;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 2000px;
+        }
+
+        .faq-answer p {
+            color: #34495e;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer ul {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+            color: #34495e;
+        }
+
+        .faq-answer li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: #e8f5fe;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+            margin: 1rem 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        .warning-box {
+            background: #fff9e6;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid #f39c12;
+            margin: 1rem 0;
+        }
+
+        .warning-box p {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        @media screen and (max-width: 768px) {
+            .faq-intro h1 {
+                font-size: 2rem;
+            }
+
+            .category-title {
+                font-size: 1.5rem;
+            }
+
+            .faq-question {
+                padding: 1rem;
+            }
+
+            .faq-question h3 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>易經卜卦</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hexagrams.html" class="nav-link">六十四卦</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="learning-guide.html" class="nav-link">學習指南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="case-studies.html" class="nav-link">實例分析</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link">常見問題</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro Section -->
+        <section class="faq-intro">
+            <div class="container">
+                <h1>常見問題解答</h1>
+                <p>整理了學習和使用易經過程中最常遇到的問題，幫助你快速找到答案。如果你還有其他疑問，歡迎通過我們的聯絡方式提問。</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">問題分類</h2>
+
+                <div class="faq-categories">
+                    <a href="#basics" class="category-btn">基礎概念</a>
+                    <a href="#divination" class="category-btn">占卜相關</a>
+                    <a href="#learning" class="category-btn">學習方法</a>
+                    <a href="#interpretation" class="category-btn">解讀技巧</a>
+                    <a href="#practice" class="category-btn">實際應用</a>
+                </div>
+
+                <div class="faq-container">
+                    <!-- 基礎概念 -->
+                    <div id="basics" class="faq-category-section">
+                        <h2 class="category-title">📚 基礎概念</h2>
+
+                        <div class="faq-item active">
+                            <div class="faq-question">
+                                <h3>易經是什麼？它只是用來算命的嗎？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>易經是中國最古老的經典之一，被譽為「群經之首」。它絕不僅僅是算命工具，而是一部包含深刻哲學思想的典籍。</p>
+                                <p>易經主要包含三個層面：</p>
+                                <ul>
+                                    <li><strong>哲學思想：</strong>探討宇宙運行規律、陰陽變化、人生智慧</li>
+                                    <li><strong>決策參考：</strong>通過占卜提供思考角度和建議</li>
+                                    <li><strong>文化經典：</strong>影響了中國哲學、文化、藝術等各個領域</li>
+                                </ul>
+                                <div class="highlight-box">
+                                    <p><strong>重點：</strong>易經的核心是「變」的哲學，教導我們如何在變化中順應天道、把握時機、做出正確決策。占卜只是應用易經智慧的方式之一。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>陰陽和八卦是什麼意思？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p><strong>陰陽</strong>是易經最基本的概念，代表宇宙間相對立又相統一的兩種力量：</p>
+                                <ul>
+                                    <li>陽（—）：剛健、主動、明亮、向上</li>
+                                    <li>陰（- -）：柔順、被動、陰暗、向下</li>
+                                </ul>
+                                <p><strong>八卦</strong>是由三個陰爻或陽爻組成的符號，代表八種基本自然現象：</p>
+                                <ul>
+                                    <li>乾☰（天）、坤☷（地）、震☳（雷）、巽☴（風）</li>
+                                    <li>坎☵（水）、離☲（火）、艮☶（山）、兌☱（澤）</li>
+                                </ul>
+                                <p>八卦兩兩相疊，形成六十四卦，代表人生和自然界的六十四種基本情境。</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>易經和周易有什麼區別？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>《周易》是易經的一種，也是目前流傳最廣、影響最大的版本。</p>
+                                <p>歷史上有「三易」之說：</p>
+                                <ul>
+                                    <li><strong>連山易：</strong>相傳為夏代的易書（已失傳）</li>
+                                    <li><strong>歸藏易：</strong>相傳為商代的易書（已失傳）</li>
+                                    <li><strong>周易：</strong>周代的易書，即我們現在學習的易經</li>
+                                </ul>
+                                <p>一般我們說的「易經」就是指《周易》，兩者可以互換使用。《周易》包括經文（卦辭、爻辭）和傳文（十翼，即易傳）兩部分。</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>易經和迷信有什麼區別？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>這是很多人關心的問題。易經和迷信有本質區別：</p>
+                                <p><strong>易經的特點：</strong></p>
+                                <ul>
+                                    <li>強調個人的主動性和自由意志</li>
+                                    <li>提供智慧參考，不是絕對預言</li>
+                                    <li>重視理性分析和邏輯思考</li>
+                                    <li>鼓勵「趨吉避凶」而非宿命論</li>
+                                </ul>
+                                <p><strong>迷信的特點：</strong></p>
+                                <ul>
+                                    <li>相信命運完全被注定，無法改變</li>
+                                    <li>盲目相信，缺乏理性思考</li>
+                                    <li>過度依賴，放棄自主判斷</li>
+                                </ul>
+                                <div class="warning-box">
+                                    <p><strong>正確態度：</strong>易經是智慧工具，不是萬能的預言。我們應該理性看待占卜結果，結合實際情況做出判斷，而不是盲目依賴或過度迷信。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 占卜相關 -->
+                    <div id="divination" class="faq-category-section">
+                        <h2 class="category-title">🔮 占卜相關</h2>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>易經占卜真的準嗎？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>這個問題沒有簡單的答案。易經占卜的「準確性」取決於多個因素：</p>
+                                <ul>
+                                    <li><strong>問題的明確性：</strong>問題越具體明確，越容易得到有意義的指引</li>
+                                    <li><strong>占卜者的誠心：</strong>態度越誠懇專注，越能有深刻的領悟</li>
+                                    <li><strong>解讀的能力：</strong>對易經理解越深，解讀越能契合實際</li>
+                                    <li><strong>實際的驗證：</strong>事後驗證能幫助提升解讀能力</li>
+                                </ul>
+                                <div class="highlight-box">
+                                    <p><strong>正確理解：</strong>易經占卜不是「預測未來」，而是「分析當前形勢、提供智慧參考」。它幫助你看清局勢、找到盲點、做出更明智的決策。準確性更多體現在「指導意義」而非「預言準確」。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>占卜前需要做什麼準備？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>良好的準備能提升占卜的品質：</p>
+                                <p><strong>心理準備：</strong></p>
+                                <ul>
+                                    <li>保持平靜的心態，不要在情緒激動時占卜</li>
+                                    <li>明確自己要問的問題，問題要具體而非模糊</li>
+                                    <li>帶著誠心和尊重的態度</li>
+                                    <li>做好接受任何答案的心理準備</li>
+                                </ul>
+                                <p><strong>環境準備：</strong></p>
+                                <ul>
+                                    <li>選擇安靜的環境，避免干擾</li>
+                                    <li>準備好占卜工具（銅錢、蓍草或線上工具）</li>
+                                    <li>準備筆和紙記錄卦象和想法</li>
+                                </ul>
+                                <p><strong>問題準備：</strong></p>
+                                <ul>
+                                    <li>問題要明確具體，避免「是否」類問題</li>
+                                    <li>例如，與其問「我會成功嗎」，不如問「我的新項目發展趨勢如何」</li>
+                                    <li>最好寫下問題，確保思路清晰</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>可以為同一個問題重複占卜嗎？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>一般<strong>不建議</strong>為同一個問題短時間內重複占卜，原因：</p>
+                                <ul>
+                                    <li>這反映了對占卜結果的不信任和不尊重</li>
+                                    <li>可能導致「占卜依賴症」，失去自主判斷能力</li>
+                                    <li>重複占卜的結果往往令人更困惑</li>
+                                </ul>
+                                <p><strong>但以下情況可以重新占卜：</strong></p>
+                                <ul>
+                                    <li>情況發生了重大變化</li>
+                                    <li>距離上次占卜已經過了相當時間（如幾個月）</li>
+                                    <li>問題的角度或重點改變了</li>
+                                    <li>你已經採取行動，想了解新的發展趨勢</li>
+                                </ul>
+                                <div class="warning-box">
+                                    <p><strong>建議：</strong>如果對占卜結果不理解，應該深入研究卦象含義，或請教有經驗的人，而不是立即重新占卜。給自己時間理解和消化，往往會有新的領悟。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>什麼樣的問題適合用易經占卜？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p><strong>適合占卜的問題：</strong></p>
+                                <ul>
+                                    <li>重要決策：轉職、創業、投資等重大選擇</li>
+                                    <li>發展趨勢：事業、項目、關係的發展方向</li>
+                                    <li>困境出路：面臨困難時尋求突破方向</li>
+                                    <li>時機判斷：某個行動的時機是否恰當</li>
+                                    <li>態度調整：應該以什麼態度面對某個局面</li>
+                                </ul>
+                                <p><strong>不適合占卜的問題：</strong></p>
+                                <ul>
+                                    <li>瑣碎小事：今天吃什麼、穿什麼等日常瑣事</li>
+                                    <li>測試性質：「占卜準不準」這類測試問題</li>
+                                    <li>他人隱私：未經同意占卜他人私事</li>
+                                    <li>惡意目的：如何傷害他人、如何欺騙等</li>
+                                    <li>超出能力：中樂透號碼、股票漲跌等隨機事件</li>
+                                </ul>
+                                <div class="highlight-box">
+                                    <p><strong>原則：</strong>問題應該是重要的、你有能力影響的、符合道德的。易經占卜適合用於指導人生重要決策，而非日常瑣事或不切實際的期望。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>線上占卜和傳統占卜有區別嗎？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>線上占卜和傳統占卜（如銅錢、蓍草）在形式上不同，但核心理念相同：</p>
+                                <p><strong>線上占卜的優勢：</strong></p>
+                                <ul>
+                                    <li>方便快捷，隨時隨地可以進行</li>
+                                    <li>自動記錄歷史，方便回顧和驗證</li>
+                                    <li>降低學習門檻，適合初學者</li>
+                                </ul>
+                                <p><strong>傳統占卜的優勢：</strong></p>
+                                <ul>
+                                    <li>儀式感更強，更容易專注誠心</li>
+                                    <li>親手操作，與卦象的連結更深</li>
+                                    <li>傳承古法，體驗傳統文化</li>
+                                </ul>
+                                <p><strong>關鍵因素：</strong>無論哪種方式，最重要的是你的誠心、專注和對卦象的理解。工具只是媒介，關鍵在於你的心態和解讀能力。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 學習方法 -->
+                    <div id="learning" class="faq-category-section">
+                        <h2 class="category-title">📖 學習方法</h2>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>完全沒基礎可以學易經嗎？需要多長時間？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p><strong>完全可以！</strong>易經的學習是循序漸進的，零基礎也能學好。</p>
+                                <p><strong>學習時程參考：</strong></p>
+                                <ul>
+                                    <li><strong>入門階段（1-2 個月）：</strong>了解基本概念、認識八卦、學會簡單占卜</li>
+                                    <li><strong>熟悉階段（3-6 個月）：</strong>熟悉六十四卦、理解卦辭爻辭、能進行基本解讀</li>
+                                    <li><strong>應用階段（6-12 個月）：</strong>靈活解讀卦象、應用於實際生活</li>
+                                    <li><strong>精進階段（持續）：</strong>深入研究哲理、形成個人體系</li>
+                                </ul>
+                                <div class="highlight-box">
+                                    <p><strong>重要提醒：</strong>易經的學習是終身的。不要期望快速精通，而要享受學習過程。每個階段都有不同的收穫，保持耐心和興趣是最重要的。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>應該先看哪本書？有推薦的入門書籍嗎？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p><strong>初學者推薦書籍：</strong></p>
+                                <ul>
+                                    <li><strong>《易經入門》- 傅佩榮：</strong>現代語言解釋，深入淺出，適合零基礎</li>
+                                    <li><strong>《易經的智慧》- 曾仕強：</strong>從管理角度解讀，通俗易懂</li>
+                                    <li><strong>《圖解易經》系列：</strong>圖文並茂，視覺化學習</li>
+                                    <li><strong>《易經雜說》- 南懷瑾：</strong>融合儒釋道思想，深入淺出</li>
+                                </ul>
+                                <p><strong>進階參考：</strong></p>
+                                <ul>
+                                    <li>《周易本義》- 朱熹</li>
+                                    <li>《周易正義》- 孔穎達</li>
+                                    <li>《易傳》（十翼）- 傳為孔子所作</li>
+                                </ul>
+                                <p><strong>學習建議：</strong>先選一本通俗入門書完整讀完，建立基礎框架後，再閱讀其他書籍擴展理解。不要同時讀太多本，避免混淆。</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>必須背下所有卦辭和爻辭嗎？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p><strong>不需要！</strong>理解比記憶更重要。</p>
+                                <p><strong>建議的學習方式：</strong></p>
+                                <ul>
+                                    <li><strong>理解卦象結構：</strong>先理解每個卦的組成和象徵意義</li>
+                                    <li><strong>記住關鍵字：</strong>每個卦記住 2-3 個關鍵詞即可</li>
+                                    <li><strong>掌握核心卦：</strong>優先熟記最常見的 12-20 個卦</li>
+                                    <li><strong>通過實踐記憶：</strong>多次占卜和解讀，自然會記住</li>
+                                </ul>
+                                <p><strong>什麼時候需要背誦：</strong></p>
+                                <ul>
+                                    <li>如果你想深入研究易經哲學</li>
+                                    <li>如果你想成為專業的易經老師或占卜師</li>
+                                    <li>如果你對古文有興趣，享受背誦的過程</li>
+                                </ul>
+                                <div class="highlight-box">
+                                    <p><strong>記住：</strong>易經的價值在於智慧和應用，而非死記硬背。理解卦象的邏輯和內涵，比背誦文字更有意義。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>古文版本看不懂怎麼辦？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>這是很正常的，易經原文是古文，確實有一定難度。</p>
+                                <p><strong>解決方法：</strong></p>
+                                <ul>
+                                    <li><strong>從白話版本開始：</strong>先讀現代白話解釋的版本，建立基礎理解</li>
+                                    <li><strong>對照閱讀：</strong>讀一段原文，立即看對應的白話解釋</li>
+                                    <li><strong>重點詞彙：</strong>記住常見的古文詞彙，逐漸提升閱讀能力</li>
+                                    <li><strong>查閱註解：</strong>利用有詳細註解的版本</li>
+                                    <li><strong>不求完美：</strong>初學階段理解大意即可，不必糾結每個字</li>
+                                </ul>
+                                <p><strong>循序漸進：</strong>隨著學習深入，古文理解能力會自然提升。不要因為看不懂古文就放棄，可以從現代解讀開始，逐步接觸原典。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 解讀技巧 -->
+                    <div id="interpretation" class="faq-category-section">
+                        <h2 class="category-title">🎯 解讀技巧</h2>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>得到吉卦就一定順利，凶卦就一定不好嗎？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p><strong>不是這麼簡單！</strong>易經的智慧遠比吉凶二元論複雜。</p>
+                                <p><strong>正確理解吉凶：</strong></p>
+                                <ul>
+                                    <li><strong>吉中有凶：</strong>泰卦雖吉，但「泰極否來」，順境中要警惕</li>
+                                    <li><strong>凶中有吉：</strong>困境往往是轉機，「否極泰來」</li>
+                                    <li><strong>因時而異：</strong>同一卦在不同情境下意義不同</li>
+                                    <li><strong>因人而異：</strong>關鍵看你如何應對和行動</li>
+                                </ul>
+                                <div class="highlight-box">
+                                    <p><strong>易經的智慧：</strong>重點不是預測吉凶，而是告訴你如何「趨吉避凶」。即使得到所謂「凶卦」，如果你能按照卦象指引調整行動，也能化凶為吉。易經強調的是你的主動性和應對智慧。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>動爻是什麼？如何解讀？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p><strong>動爻</strong>是占卜時顯示變化的爻位，代表事態的動態和發展方向。</p>
+                                <p><strong>動爻的意義：</strong></p>
+                                <ul>
+                                    <li>指出事態發展的關鍵點</li>
+                                    <li>顯示需要特別注意的方面</li>
+                                    <li>提供更具體的指導建議</li>
+                                </ul>
+                                <p><strong>如何解讀：</strong></p>
+                                <ul>
+                                    <li><strong>本卦：</strong>當前的狀態和整體形勢</li>
+                                    <li><strong>動爻：</strong>關鍵變化點和具體建議</li>
+                                    <li><strong>變卦：</strong>未來的發展趨勢（動爻變化後形成的卦）</li>
+                                </ul>
+                                <p><strong>解讀順序：</strong>先看本卦理解整體情況 → 看動爻了解關鍵點和建議 → 看變卦了解發展趨勢</p>
+                                <div class="highlight-box">
+                                    <p><strong>提示：</strong>如果有多個動爻，要綜合考慮；如果沒有動爻（六爻皆不動），則專注於本卦的理解，表示情況穩定，不會有大的變化。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>如何判斷占卜結果是否準確？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>這需要<strong>事後驗證</strong>和持續學習。</p>
+                                <p><strong>驗證方法：</strong></p>
+                                <ul>
+                                    <li><strong>記錄詳細：</strong>記下占卜時間、問題、卦象、你的解讀</li>
+                                    <li><strong>觀察發展：</strong>關注事態實際發展過程</li>
+                                    <li><strong>事後對照：</strong>事情結束後，對照當時的卦象和解讀</li>
+                                    <li><strong>分析偏差：</strong>如果不準，思考是哪個環節出了問題</li>
+                                    <li><strong>總結經驗：</strong>累積案例，提升解讀能力</li>
+                                </ul>
+                                <p><strong>常見問題：</strong></p>
+                                <ul>
+                                    <li><strong>問題不明確：</strong>導致解讀沒有針對性</li>
+                                    <li><strong>解讀過於主觀：</strong>只看自己想看的部分</li>
+                                    <li><strong>忽視爻位：</strong>只看卦辭，不看爻辭</li>
+                                    <li><strong>脫離實際：</strong>解讀與實際情況嚴重脫節</li>
+                                </ul>
+                                <div class="warning-box">
+                                    <p><strong>重要：</strong>提升準確性需要長期實踐和驗證。不要因為一兩次不準就放棄，也不要因為偶爾準確就過度自信。保持學習和反思的態度。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>同一個卦象不同人解讀可能不同嗎？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p><strong>是的</strong>，這是完全正常的現象。</p>
+                                <p><strong>解讀差異的原因：</strong></p>
+                                <ul>
+                                    <li><strong>經驗不同：</strong>學習深度和實踐經驗影響解讀</li>
+                                    <li><strong>角度不同：</strong>關注的重點可能不同</li>
+                                    <li><strong>背景不同：</strong>對問題背景的了解程度不同</li>
+                                    <li><strong>流派不同：</strong>易學流派眾多，方法有差異</li>
+                                </ul>
+                                <p><strong>如何處理差異：</strong></p>
+                                <ul>
+                                    <li>聽取多方意見，但保持自己的判斷</li>
+                                    <li>選擇邏輯清晰、契合實際的解讀</li>
+                                    <li>不要盲從權威，要批判性思考</li>
+                                    <li>結合自己的直覺和理性分析</li>
+                                </ul>
+                                <div class="highlight-box">
+                                    <p><strong>記住：</strong>易經不是精確的科學公式，而是智慧的啟發。不同的解讀可能都有其道理，關鍵是哪個對你更有啟發意義。隨著學習深入，你會形成自己的解讀體系。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 實際應用 -->
+                    <div id="practice" class="faq-category-section">
+                        <h2 class="category-title">💼 實際應用</h2>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>可以為別人占卜嗎？需要注意什麼？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p><strong>可以</strong>，但需要遵守一些原則。</p>
+                                <p><strong>基本原則：</strong></p>
+                                <ul>
+                                    <li><strong>徵得同意：</strong>不要未經同意為他人占卜</li>
+                                    <li><strong>保持中立：</strong>客觀解讀，不摻入個人偏見</li>
+                                    <li><strong>謹慎表達：</strong>語言要負責任，避免過於絕對的判斷</li>
+                                    <li><strong>保護隱私：</strong>不要洩露他人占卜內容</li>
+                                    <li><strong>提供建議：</strong>給出建設性建議，而非嚇唬或誤導</li>
+                                </ul>
+                                <p><strong>不要做的事：</strong></p>
+                                <ul>
+                                    <li>不要利用占卜操控他人</li>
+                                    <li>不要誇大卦象的凶險</li>
+                                    <li>不要收取不合理的費用</li>
+                                    <li>不要對結果做絕對保證</li>
+                                </ul>
+                                <div class="warning-box">
+                                    <p><strong>重要提醒：</strong>為他人占卜是很大的責任。你的解讀可能影響他人的決策，所以要格外謹慎。如果沒有足夠的經驗和把握，建議先不要為他人占卜，或者只提供參考而非定論。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>易經可以應用在哪些生活領域？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>易經的智慧可以廣泛應用於生活各個方面：</p>
+                                <p><strong>事業發展：</strong></p>
+                                <ul>
+                                    <li>職業選擇、轉職時機、創業決策</li>
+                                    <li>項目規劃、市場判斷、風險評估</li>
+                                    <li>團隊管理、領導力培養</li>
+                                </ul>
+                                <p><strong>人際關係：</strong></p>
+                                <ul>
+                                    <li>溝通技巧、衝突化解</li>
+                                    <li>建立關係、維護友誼</li>
+                                    <li>理解他人、處理矛盾</li>
+                                </ul>
+                                <p><strong>個人成長：</strong></p>
+                                <ul>
+                                    <li>性格修養、心態調整</li>
+                                    <li>學習規劃、能力提升</li>
+                                    <li>人生方向、價值觀建立</li>
+                                </ul>
+                                <p><strong>決策判斷：</strong></p>
+                                <ul>
+                                    <li>重要選擇、時機把握</li>
+                                    <li>風險評估、利弊分析</li>
+                                    <li>策略調整、應對變化</li>
+                                </ul>
+                                <div class="highlight-box">
+                                    <p><strong>核心價值：</strong>易經不只是占卜工具，更是思維方式和人生智慧。它教會我們順應變化、把握時機、平衡陰陽、趨吉避凶。這些智慧可以融入日常生活的各個方面。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>如何避免過度依賴易經占卜？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>這是一個很重要的問題。過度依賴會失去自主判斷能力。</p>
+                                <p><strong>保持健康態度的方法：</strong></p>
+                                <ul>
+                                    <li><strong>重大事項才占卜：</strong>日常瑣事靠自己判斷</li>
+                                    <li><strong>作為參考而非命令：</strong>占卜結果是建議，不是指令</li>
+                                    <li><strong>結合理性分析：</strong>同時運用邏輯思考和實際評估</li>
+                                    <li><strong>限制頻率：</strong>給自己設定占卜頻率的限制</li>
+                                    <li><strong>培養決斷力：</strong>有意識地訓練自己的判斷能力</li>
+                                </ul>
+                                <p><strong>過度依賴的徵兆：</strong></p>
+                                <ul>
+                                    <li>任何決定都要占卜</li>
+                                    <li>占卜結果不滿意就重複占卜</li>
+                                    <li>完全按照占卜結果行動，不用自己思考</li>
+                                    <li>生活中充滿焦慮，沒有占卜就無法做決定</li>
+                                </ul>
+                                <div class="warning-box">
+                                    <p><strong>正確定位：</strong>易經是你的智慧助手，而非生活的主宰。你才是自己人生的決策者。占卜提供角度和啟發，但最終決定權在你手上。保持這個清醒認識，才能健康地運用易經。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>如果占卜結果和理性分析矛盾，該聽誰的？</h3>
+                                <span class="faq-icon">▼</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>這是很多人都會遇到的情況。處理方式：</p>
+                                <p><strong>首先，重新審視：</strong></p>
+                                <ul>
+                                    <li>是否正確理解了卦象的含義？</li>
+                                    <li>理性分析是否考慮了所有因素？</li>
+                                    <li>兩者真的矛盾，還是角度不同？</li>
+                                </ul>
+                                <p><strong>綜合考慮：</strong></p>
+                                <ul>
+                                    <li><strong>理性分析偏重：</strong>已知的、可量化的因素</li>
+                                    <li><strong>易經占卜偏重：</strong>趨勢、時機、未知的可能性</li>
+                                    <li>兩者其實是互補的，不一定真的矛盾</li>
+                                </ul>
+                                <p><strong>最終決策：</strong></p>
+                                <ul>
+                                    <li>如果理性分析非常明確，證據充分，可以優先考慮</li>
+                                    <li>如果有直覺上的不安，值得重視易經的警示</li>
+                                    <li>如果兩者都不夠確定，可以尋求第三方意見</li>
+                                </ul>
+                                <div class="highlight-box">
+                                    <p><strong>建議：</strong>最理想的狀態是將易經智慧和理性分析結合。易經提醒你注意趨勢和時機，理性分析幫你評估具體條件。兩者結合，才能做出最全面的判斷。記住，你永遠是最終決策者。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>還有其他問題嗎？</h2>
+                    <p>開始你的易經學習之旅，在實踐中找到更多答案。</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="learning-guide.html" class="btn btn-primary btn-large">開始學習</a>
+                        <a href="hexagrams.html" class="btn btn-secondary btn-large">六十四卦</a>
+                        <a href="https://iching.changes.live" class="btn btn-secondary btn-large">立即占卜</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>易經卜卦</h3>
+                    <p>傳統智慧與現代生活的完美結合</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="hexagrams.html">六十四卦</a></li>
+                        <li><a href="learning-guide.html">學習指南</a></li>
+                        <li><a href="case-studies.html">實例分析</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
+                        <li><a href="privacy.html">隱私政策</a></li>
+                        <li><a href="terms.html">使用條款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡資訊</h4>
+                    <p>網站：<a href="https://changes.live">changes.live</a></p>
+                    <p>卜卦服務：<a href="https://iching.changes.live">iching.changes.live</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 易經卜卦 Changes.live. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const item = this.parentElement;
+                const wasActive = item.classList.contains('active');
+
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't active
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for category buttons
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
